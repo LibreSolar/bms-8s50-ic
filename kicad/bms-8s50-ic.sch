@@ -1,0 +1,799 @@
+EESchema Schematic File Version 4
+LIBS:bms-8s50-ic-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 5
+Title "BMS 8S50 IC"
+Date "2019-04-26"
+Rev "0.1"
+Comp "Libre Solar"
+Comment1 "License: CC-BY-SA"
+Comment2 "Author: Martin Jäger"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 6800 4700 900  600 
+U 58363B12
+F0 "Power Supply" 50
+F1 "power_supply.sch" 50
+F2 "RGO" I L 6800 5100 50 
+F3 "BAT+" I L 6800 4900 50 
+$EndSheet
+$Comp
+L Project:LibreSolar_Logo LOGO2
+U 1 1 58F7CBC4
+P 5650 7050
+F 0 "LOGO2" H 5650 7325 50  0000 C CNN
+F 1 "LIBRE_SOLAR" H 5650 6825 50  0000 C CNN
+F 2 "LibreSolar:LIBRESOLAR_LOGO" H 5670 7040 60  0001 C CNN
+F 3 "" H 5670 7040 60  0001 C CNN
+	1    5650 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Project:Logo_Open_Hardware_Small LOGO1
+U 1 1 58F7CD5F
+P 4900 7050
+F 0 "LOGO1" H 4900 7325 50  0000 C CNN
+F 1 "OPEN_HARDWARE" H 4900 6825 50  0000 C CNN
+F 2 "Symbol:OSHW-Logo_5.7x6mm_SilkScreen" H 4900 7050 50  0001 C CNN
+F 3 "" H 4900 7050 50  0001 C CNN
+	1    4900 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 591748EB
+P 2500 1400
+F 0 "TP4" H 2578 1540 50  0000 L CNN
+F 1 "Bat+" H 2578 1449 50  0000 L CNN
+F 2 "LibreSolar:TestPoint_1mm_pad" H 2500 1400 50  0001 C CNN
+F 3 "" H 2500 1400 50  0001 C CNN
+	1    2500 1400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 591783E5
+P 5800 5000
+F 0 "TP5" H 5878 5140 50  0000 L CNN
+F 1 "Regout" H 5878 5049 50  0000 L CNN
+F 2 "LibreSolar:TestPoint_1mm_pad" H 5800 5000 50  0001 C CNN
+F 3 "" H 5800 5000 50  0001 C CNN
+	1    5800 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5917857D
+P 4400 1400
+F 0 "TP3" H 4478 1540 50  0000 L CNN
+F 1 "Ext+" H 4478 1449 50  0000 L CNN
+F 2 "LibreSolar:TestPoint_1mm_pad" H 4400 1400 50  0001 C CNN
+F 3 "" H 4400 1400 50  0001 C CNN
+	1    4400 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5917D3E9
+P 5300 3200
+F 0 "TP6" H 5378 3340 50  0000 L CNN
+F 1 "SDA" H 5378 3249 50  0000 L CNN
+F 2 "LibreSolar:TestPoint_1mm_pad" H 5300 3200 50  0001 C CNN
+F 3 "" H 5300 3200 50  0001 C CNN
+	1    5300 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5917D5BB
+P 5600 3200
+F 0 "TP7" H 5678 3340 50  0000 L CNN
+F 1 "SCL" H 5678 3249 50  0000 L CNN
+F 2 "LibreSolar:TestPoint_1mm_pad" H 5600 3200 50  0001 C CNN
+F 3 "" H 5600 3200 50  0001 C CNN
+	1    5600 3200
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 2800 1400 1300 1000
+U 5CC2B452
+F0 "Power Part" 50
+F1 "power_part.sch" 50
+F2 "BAT+" I L 2800 1600 50 
+F3 "CFET" I R 4100 2100 50 
+F4 "DFET" I R 4100 2200 50 
+F5 "PCFET" I R 4100 2300 50 
+F6 "EXT+" I R 4100 1600 50 
+F7 "V_EXT" O R 4100 1700 50 
+F8 "CHG+" O R 4100 1900 50 
+F9 "CSI2" O L 2800 1800 50 
+F10 "BAT-" I L 2800 2200 50 
+$EndSheet
+$Comp
+L Connector_Generic:Conn_02x07_Top_Bottom J1
+U 1 1 5CD862E3
+P 2100 4300
+F 0 "J1" H 2150 4700 50  0000 C CNN
+F 1 "Conn_01x10" H 2150 3900 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-1400_2x07_P3.00mm_Horizontal" H 2100 4300 50  0001 C CNN
+F 3 "~" H 2100 4300 50  0001 C CNN
+F 4 "Würth" H 2100 4300 50  0001 C CNN "Manufacturer"
+F 5 "66201421022" H 2100 4300 50  0001 C CNN "PartNumber"
+	1    2100 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 4500 1700 4500
+Wire Wire Line
+	1900 4000 1800 4000
+$Comp
+L power:GND #PWR0101
+U 1 1 5CD9F38F
+P 1200 4200
+F 0 "#PWR0101" H 1200 3950 50  0001 C CNN
+F 1 "GND" H 1205 4027 50  0000 C CNN
+F 2 "" H 1200 4200 50  0001 C CNN
+F 3 "" H 1200 4200 50  0001 C CNN
+	1    1200 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 4100 1200 4200
+Wire Wire Line
+	1200 4100 1800 4100
+Wire Wire Line
+	1800 4000 1800 4100
+Connection ~ 1800 4100
+Wire Wire Line
+	1800 4100 1900 4100
+$Comp
+L Connector:USB_B_Micro J3
+U 1 1 5CC29143
+P 10000 1400
+F 0 "J3" H 9771 1391 50  0000 R CNN
+F 1 "USB_B_Micro" H 10200 1750 50  0000 R CNN
+F 2 "LibreSolar:USB_Micro-B_10103594-0001LF" H 10150 1350 50  0001 C CNN
+F 3 "~" H 10150 1350 50  0001 C CNN
+F 4 "Amphenol FCI" H 10000 1400 50  0001 C CNN "Manufacturer"
+F 5 "10103594-0001LF" H 10000 1400 50  0001 C CNN "PartNumber"
+	1    10000 1400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LibreSolar:UEXT J?
+U 1 1 5CC2FE37
+P 9100 2700
+AR Path="/58AF4F23/5CC2FE37" Ref="J?"  Part="1" 
+AR Path="/5CC2FE37" Ref="J2"  Part="1" 
+F 0 "J2" H 8850 3450 50  0000 L CNN
+F 1 "UEXT" H 9350 3450 50  0000 R CNN
+F 2 "LibreSolar:Box_Header_2x05x2.54mm_Straight" H 9100 1750 50  0001 C CIN
+F 3 "" H 9100 2600 60  0000 C CNN
+F 4 "Würth" H 9100 2700 60  0001 C CNN "Manufacturer"
+F 5 "61201021621" H 9100 2700 60  0001 C CNN "PartNumber"
+	1    9100 2700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x01 P?
+U 1 1 5CC45AB6
+P 1200 1600
+AR Path="/5CC2B452/5CC45AB6" Ref="P?"  Part="1" 
+AR Path="/5CC45AB6" Ref="P1"  Part="1" 
+F 0 "P1" H 1200 1700 50  0000 C CNN
+F 1 "CONN_01X01" V 1300 1600 50  0000 C CNN
+F 2 "LibreSolar:Wuerth_WP-THRBU_74650195" H 1200 1600 50  0001 C CNN
+F 3 "" H 1200 1600 50  0000 C CNN
+F 4 "Wuerth" H -400 -700 60  0001 C CNN "Manufacturer"
+F 5 "74650195" H -400 -700 60  0001 C CNN "PartNumber"
+	1    1200 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x01 P?
+U 1 1 5CC4AF57
+P 5500 1600
+AR Path="/5CC2B452/5CC4AF57" Ref="P?"  Part="1" 
+AR Path="/5CC4AF57" Ref="P3"  Part="1" 
+F 0 "P3" H 5500 1700 50  0000 C CNN
+F 1 "CONN_01X01" V 5600 1600 50  0000 C CNN
+F 2 "LibreSolar:Wuerth_WP-THRBU_74650195" H 5500 1600 50  0001 C CNN
+F 3 "" H 5500 1600 50  0000 C CNN
+F 4 "Wuerth" H 5500 1600 60  0001 C CNN "Manufacturer"
+	1    5500 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x01 P?
+U 1 1 5CC4AF60
+P 5500 2200
+AR Path="/5CC2B452/5CC4AF60" Ref="P?"  Part="1" 
+AR Path="/5CC4AF60" Ref="P4"  Part="1" 
+F 0 "P4" H 5500 2300 50  0000 C CNN
+F 1 "CONN_01X01" V 5600 2200 50  0000 C CNN
+F 2 "LibreSolar:Wuerth_WP-THRBU_74650195" H 5500 2200 50  0001 C CNN
+F 3 "" H 5500 2200 50  0000 C CNN
+F 4 "Wuerth" H -1000 -2600 60  0001 C CNN "Manufacturer"
+F 5 "74650195" H -1000 -2600 60  0001 C CNN "PartNumber"
+	1    5500 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 1600 2500 1600
+Wire Wire Line
+	8700 2400 7700 2400
+Wire Wire Line
+	8700 2300 7700 2300
+Wire Wire Line
+	7700 1900 7800 1900
+Wire Wire Line
+	7800 1900 7800 1400
+Wire Wire Line
+	7800 1400 9700 1400
+Wire Wire Line
+	7900 1500 7900 2000
+Wire Wire Line
+	7900 2000 7700 2000
+Wire Wire Line
+	9700 1500 7900 1500
+$Comp
+L power:GND #PWR0115
+U 1 1 5CC5FD50
+P 9200 3500
+F 0 "#PWR0115" H 9200 3250 50  0001 C CNN
+F 1 "GND" H 9205 3327 50  0000 C CNN
+F 2 "" H 9200 3500 50  0001 C CNN
+F 3 "" H 9200 3500 50  0001 C CNN
+	1    9200 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 5CC5FD77
+P 10000 2000
+F 0 "#PWR0116" H 10000 1750 50  0001 C CNN
+F 1 "GND" H 10005 1827 50  0000 C CNN
+F 2 "" H 10000 2000 50  0001 C CNN
+F 3 "" H 10000 2000 50  0001 C CNN
+	1    10000 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 1800 10000 1900
+Wire Wire Line
+	10000 1900 10100 1900
+Wire Wire Line
+	10100 1900 10100 1800
+Connection ~ 10000 1900
+Wire Wire Line
+	10000 1900 10000 2000
+$Comp
+L Project:R R?
+U 1 1 5CC66B20
+P 9600 1800
+AR Path="/58AF4F23/5CC66B20" Ref="R?"  Part="1" 
+AR Path="/58E2D38D/5CC66B20" Ref="R?"  Part="1" 
+AR Path="/5CC66B20" Ref="R27"  Part="1" 
+F 0 "R27" V 9525 1800 50  0000 C CNN
+F 1 "330k" V 9675 1800 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V 9425 1700 50  0001 C CNN
+F 3 "" H 9600 1800 50  0000 C CNN
+F 4 "Yageo" H 5700 -1350 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-07330KL" H 5700 -1350 50  0001 C CNN "PartNumber"
+	1    9600 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 5CC67BEF
+P 9600 2000
+F 0 "#PWR0117" H 9600 1750 50  0001 C CNN
+F 1 "GND" H 9605 1827 50  0000 C CNN
+F 2 "" H 9600 2000 50  0001 C CNN
+F 3 "" H 9600 2000 50  0001 C CNN
+	1    9600 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 1600 9600 1600
+Wire Wire Line
+	9600 1600 9600 1700
+Wire Wire Line
+	9600 1900 9600 2000
+$Comp
+L power:+3.3V #PWR0118
+U 1 1 5CC6B19A
+P 8600 1800
+F 0 "#PWR0118" H 8600 1650 50  0001 C CNN
+F 1 "+3.3V" H 8615 1973 50  0000 C CNN
+F 2 "" H 8600 1800 50  0001 C CNN
+F 3 "" H 8600 1800 50  0001 C CNN
+	1    8600 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 2100 8600 2100
+Wire Wire Line
+	8600 2100 8600 1900
+Wire Wire Line
+	9200 3500 9200 3400
+Wire Wire Line
+	7700 2900 8700 2900
+Wire Wire Line
+	8700 3000 7700 3000
+Wire Wire Line
+	7700 3100 8700 3100
+Wire Wire Line
+	8700 3200 7700 3200
+$Comp
+L Project:RJ45_NS JP?
+U 1 1 5CC865E7
+P 9950 5250
+AR Path="/58AF4F23/5CC865E7" Ref="JP?"  Part="1" 
+AR Path="/5CC865E7" Ref="JP2"  Part="1" 
+F 0 "JP2" H 10150 5750 50  0000 C CNN
+F 1 "RJ45_NS" H 9800 5750 50  0000 C CNN
+F 2 "LibreSolar:RJ45_8P8C" H 9950 5250 50  0001 C CNN
+F 3 "" H 9950 5250 50  0001 C CNN
+F 4 "FCI / Amphenol" H 2525 1925 50  0001 C CNN "Manufacturer"
+F 5 "54602-908LF" H 2525 1925 50  0001 C CNN "PartNumber"
+	1    9950 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L Project:RJ45_NS JP?
+U 1 1 5CC865F0
+P 9950 4250
+AR Path="/58AF4F23/5CC865F0" Ref="JP?"  Part="1" 
+AR Path="/5CC865F0" Ref="JP1"  Part="1" 
+F 0 "JP1" H 10150 4750 50  0000 C CNN
+F 1 "RJ45_NS" H 9800 4750 50  0000 C CNN
+F 2 "LibreSolar:RJ45_8P8C" H 9950 4250 50  0001 C CNN
+F 3 "" H 9950 4250 50  0001 C CNN
+F 4 "FCI / Amphenol" H 875 925 50  0001 C CNN "Manufacturer"
+F 5 "54602-908LF" H 875 925 50  0001 C CNN "PartNumber"
+	1    9950 4250
+	0    1    1    0   
+$EndComp
+Text Label 9200 5600 0    50   ~ 0
+CAN_V+
+Text Label 9100 5500 0    50   ~ 0
+CAN_GND
+Text Label 9100 5100 0    50   ~ 0
+CAN_GND
+Text Label 9200 4600 0    50   ~ 0
+CAN_V+
+Text Label 9100 4500 0    50   ~ 0
+CAN_GND
+Text Label 9100 4100 0    50   ~ 0
+CAN_GND
+Wire Wire Line
+	8400 4900 9500 4900
+Wire Wire Line
+	8300 5000 9500 5000
+Wire Wire Line
+	8600 4100 8600 4500
+Wire Wire Line
+	8600 4100 9500 4100
+Wire Wire Line
+	8600 4500 9500 4500
+Wire Wire Line
+	8600 4500 8600 5100
+Wire Wire Line
+	8600 5100 9500 5100
+Connection ~ 8600 4500
+Wire Wire Line
+	8600 5100 8600 5500
+Wire Wire Line
+	8600 5500 9500 5500
+Connection ~ 8600 5100
+$Comp
+L power:GND #PWR0120
+U 1 1 5CCBF1D5
+P 8600 5600
+F 0 "#PWR0120" H 8600 5350 50  0001 C CNN
+F 1 "GND" H 8605 5427 50  0000 C CNN
+F 2 "" H 8600 5600 50  0001 C CNN
+F 3 "" H 8600 5600 50  0001 C CNN
+	1    8600 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 5500 8600 5600
+Connection ~ 8600 5500
+Wire Wire Line
+	9500 4200 8700 4200
+Wire Wire Line
+	8700 4200 8700 5200
+Wire Wire Line
+	8700 5200 9500 5200
+$Sheet
+S 6300 1700 1400 2200
+U 58E2D38D
+F0 "MCU" 50
+F1 "mcu.sch" 50
+F2 "I2C1_SDA" B R 7700 2700 50 
+F3 "I2C1_SCL" O R 7700 2600 50 
+F4 "SPI1_MOSI" O R 7700 3000 50 
+F5 "SPI1_MISO" I R 7700 2900 50 
+F6 "SPI1_SCK" O R 7700 3100 50 
+F7 "USART2_RX" I R 7700 2400 50 
+F8 "USART2_TX" O R 7700 2300 50 
+F9 "SSEL" O R 7700 3200 50 
+F10 "I2C2_SCL" O L 6300 3400 50 
+F11 "I2C2_SDA" B L 6300 3300 50 
+F12 "ALERT_IN" I L 6300 3600 50 
+F13 "SW_POWER" I L 6300 3700 50 
+F14 "CAN_H" O R 7700 3400 50 
+F15 "CAN_L" O R 7700 3500 50 
+F16 "USB_D-" B R 7700 2000 50 
+F17 "USB_D+" B R 7700 1900 50 
+F18 "V_EXT" I L 6300 2600 50 
+$EndSheet
+Wire Wire Line
+	7700 3400 8000 3400
+Wire Wire Line
+	8400 3900 9500 3900
+Wire Wire Line
+	7700 3500 7900 3500
+Wire Wire Line
+	8300 4000 9500 4000
+Wire Wire Line
+	8400 3900 8400 4900
+Wire Wire Line
+	8300 4000 8300 5000
+Wire Wire Line
+	8000 3400 8000 3900
+Wire Wire Line
+	8000 3900 8400 3900
+Connection ~ 8400 3900
+Wire Wire Line
+	8300 4000 7900 4000
+Wire Wire Line
+	7900 4000 7900 3500
+Connection ~ 8300 4000
+Wire Wire Line
+	2400 4000 2800 4000
+Wire Wire Line
+	2400 4100 2800 4100
+Wire Wire Line
+	2400 4200 2800 4200
+Wire Wire Line
+	2400 4300 2800 4300
+Wire Wire Line
+	2400 4400 2800 4400
+Wire Wire Line
+	2400 4500 2800 4500
+Wire Wire Line
+	1700 4500 1700 5000
+Wire Wire Line
+	1700 5000 2800 5000
+Wire Wire Line
+	2800 5100 1600 5100
+Wire Wire Line
+	1600 5100 1600 4400
+Wire Wire Line
+	1600 4400 1900 4400
+Wire Wire Line
+	2800 5200 1500 5200
+Wire Wire Line
+	1500 5200 1500 4300
+Wire Wire Line
+	1500 4300 1900 4300
+Wire Wire Line
+	1400 4200 1400 5300
+Wire Wire Line
+	1400 5300 2800 5300
+Wire Wire Line
+	1400 4200 1900 4200
+Wire Wire Line
+	2800 3700 2000 3700
+Wire Wire Line
+	2000 3700 2000 1600
+Connection ~ 2000 1600
+Wire Wire Line
+	1900 4600 1800 4600
+Wire Wire Line
+	1800 4600 1800 4800
+Wire Wire Line
+	2800 4700 2500 4700
+Wire Wire Line
+	2500 4700 2500 4600
+Wire Wire Line
+	2500 4600 2400 4600
+Wire Wire Line
+	1800 4800 2800 4800
+Connection ~ 4800 1600
+Wire Wire Line
+	4800 1600 4400 1600
+Text Label 5000 2200 0    50   ~ 0
+BAT-
+$Comp
+L Project:R R?
+U 1 1 5C985FEA
+P 8400 2100
+AR Path="/58AF4F23/5C985FEA" Ref="R?"  Part="1" 
+AR Path="/58E2D38D/5C985FEA" Ref="R?"  Part="1" 
+AR Path="/5C985FEA" Ref="R66"  Part="1" 
+F 0 "R66" V 8330 2100 50  0000 C CNN
+F 1 "2.2k" V 8470 2100 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" H 8400 2100 50  0001 C CNN
+F 3 "" H 8400 2100 50  0000 C CNN
+F 4 "Yageo" H 3250 -3250 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-072K2L" H 3250 -3250 50  0001 C CNN "PartNumber"
+	1    8400 2100
+	1    0    0    1   
+$EndComp
+$Comp
+L Project:R R?
+U 1 1 5C985FF3
+P 8100 2100
+AR Path="/58AF4F23/5C985FF3" Ref="R?"  Part="1" 
+AR Path="/58E2D38D/5C985FF3" Ref="R?"  Part="1" 
+AR Path="/5C985FF3" Ref="R65"  Part="1" 
+F 0 "R65" V 8030 2100 50  0000 C CNN
+F 1 "2.2k" V 8170 2100 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" H 8100 2100 50  0001 C CNN
+F 3 "" H 8100 2100 50  0000 C CNN
+F 4 "Yageo" H 3300 -3250 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-072K2L" H 3300 -3250 50  0001 C CNN "PartNumber"
+	1    8100 2100
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8600 1900 8400 1900
+Wire Wire Line
+	8400 1900 8400 2000
+Connection ~ 8600 1900
+Wire Wire Line
+	8600 1900 8600 1800
+Wire Wire Line
+	8100 2000 8100 1900
+Wire Wire Line
+	8100 1900 8400 1900
+Connection ~ 8400 1900
+Wire Wire Line
+	7700 2700 8400 2700
+Wire Wire Line
+	7700 2600 8100 2600
+Wire Wire Line
+	8400 2200 8400 2700
+Connection ~ 8400 2700
+Wire Wire Line
+	8400 2700 8700 2700
+Wire Wire Line
+	8100 2200 8100 2600
+Connection ~ 8100 2600
+Wire Wire Line
+	8100 2600 8700 2600
+$Sheet
+S 2800 3200 1300 2300
+U 5C64ED50
+F0 "ISL94202" 50
+F1 "isl94202.sch" 50
+F2 "SDA" B R 4100 4500 50 
+F3 "SCL" I R 4100 4600 50 
+F4 "RGO" O R 4100 5100 50 
+F5 "CELL8+" I L 2800 4500 50 
+F6 "CELL7+" I L 2800 5000 50 
+F7 "CELL6+" I L 2800 4400 50 
+F8 "CELL5+" I L 2800 5100 50 
+F9 "CELL4+" I L 2800 4300 50 
+F10 "CELL3+" I L 2800 5200 50 
+F11 "CELL2+" I L 2800 4200 50 
+F12 "CELL1+" I L 2800 5300 50 
+F13 "CELL1-" I L 2800 4100 50 
+F14 "BAT+" I L 2800 3700 50 
+F15 "CHG+" I R 4100 4100 50 
+F16 "EXT+" I R 4100 4300 50 
+F17 "NTC_BAT" I L 2800 4000 50 
+F18 "BTN_1" I L 2800 4700 50 
+F19 "BTN_2" I L 2800 4800 50 
+F20 "CSI1" I L 2800 3500 50 
+F21 "CSI2" I L 2800 3400 50 
+F22 "CFET" O R 4100 3600 50 
+F23 "PCFET" O R 4100 3400 50 
+F24 "DFET" O R 4100 3500 50 
+F25 "BTN_SIGNAL" O R 4100 4900 50 
+F26 "ALERT" O R 4100 4800 50 
+$EndSheet
+Wire Wire Line
+	2800 1800 2300 1800
+Wire Wire Line
+	2300 1800 2300 3400
+Wire Wire Line
+	2300 3400 2800 3400
+Wire Wire Line
+	2800 3500 2200 3500
+Wire Wire Line
+	2200 3500 2200 1600
+Connection ~ 2200 1600
+Text Label 1800 1600 2    50   ~ 0
+BAT+
+Wire Wire Line
+	4100 2300 4300 2300
+Wire Wire Line
+	4300 2300 4300 3400
+Wire Wire Line
+	4300 3400 4100 3400
+Wire Wire Line
+	4100 3500 4400 3500
+Wire Wire Line
+	4400 3500 4400 2200
+Wire Wire Line
+	4400 2200 4100 2200
+Wire Wire Line
+	4100 2100 4500 2100
+Wire Wire Line
+	4500 2100 4500 3600
+Wire Wire Line
+	4500 3600 4100 3600
+Wire Wire Line
+	4100 1900 4700 1900
+Wire Wire Line
+	4700 1900 4700 4100
+Wire Wire Line
+	4700 4100 4100 4100
+Wire Wire Line
+	4800 4300 4100 4300
+Wire Wire Line
+	4800 1600 4800 4300
+Text Label 6400 4900 0    50   ~ 0
+BAT+
+Wire Wire Line
+	4100 5100 5800 5100
+Wire Wire Line
+	5100 3300 5100 4500
+Wire Wire Line
+	5100 4500 4100 4500
+Wire Wire Line
+	4100 4600 5200 4600
+Wire Wire Line
+	5200 4600 5200 3400
+Wire Wire Line
+	5200 3400 5600 3400
+Wire Wire Line
+	6300 3600 5400 3600
+Wire Wire Line
+	5400 3600 5400 4800
+Wire Wire Line
+	5400 4800 4100 4800
+Wire Wire Line
+	6300 3700 5500 3700
+Wire Wire Line
+	5500 3700 5500 4900
+Wire Wire Line
+	5500 4900 4100 4900
+Wire Wire Line
+	5100 3300 5300 3300
+Wire Wire Line
+	5300 3200 5300 3300
+Connection ~ 5300 3300
+Wire Wire Line
+	5300 3300 6300 3300
+Wire Wire Line
+	5600 3200 5600 3400
+Connection ~ 5600 3400
+Wire Wire Line
+	5600 3400 6300 3400
+Wire Wire Line
+	4400 1400 4400 1600
+Connection ~ 4400 1600
+Wire Wire Line
+	4400 1600 4100 1600
+Wire Wire Line
+	5800 5000 5800 5100
+Connection ~ 5800 5100
+Wire Wire Line
+	5800 5100 6800 5100
+Wire Wire Line
+	9000 4600 9000 5600
+Wire Wire Line
+	9000 5600 9500 5600
+Wire Wire Line
+	9000 4600 9500 4600
+Wire Wire Line
+	8900 5400 9500 5400
+Wire Wire Line
+	8900 4400 9500 4400
+Wire Wire Line
+	9500 4300 8800 4300
+Wire Wire Line
+	8900 4400 8900 5400
+Wire Wire Line
+	8800 4300 8800 5300
+Wire Wire Line
+	8800 5300 9500 5300
+Wire Wire Line
+	4100 1700 4700 1700
+Wire Wire Line
+	6300 2600 5800 2600
+Text Label 5800 2600 0    50   ~ 0
+V_EXT
+Text Label 4700 1700 2    50   ~ 0
+V_EXT
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5D031F67
+P 1400 6500
+F 0 "H1" H 1500 6546 50  0000 L CNN
+F 1 "MountingHole" H 1500 6455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 1400 6500 50  0001 C CNN
+F 3 "~" H 1400 6500 50  0001 C CNN
+	1    1400 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5D037941
+P 1400 6800
+F 0 "H2" H 1500 6846 50  0000 L CNN
+F 1 "MountingHole" H 1500 6755 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 1400 6800 50  0001 C CNN
+F 3 "~" H 1400 6800 50  0001 C CNN
+	1    1400 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 1200 9600 1200
+Wire Wire Line
+	9600 1200 9600 1100
+$Comp
+L power:+5V #PWR011
+U 1 1 5CC6EEA6
+P 9600 1100
+F 0 "#PWR011" H 9600 950 50  0001 C CNN
+F 1 "+5V" H 9615 1273 50  0000 C CNN
+F 2 "" H 9600 1100 50  0001 C CNN
+F 3 "" H 9600 1100 50  0001 C CNN
+	1    9600 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 1600 2200 1600
+Wire Wire Line
+	2500 1400 2500 1600
+Connection ~ 2500 1600
+Wire Wire Line
+	2500 1600 2200 1600
+$Comp
+L Connector:Screw_Terminal_01x01 P?
+U 1 1 5CC45ABF
+P 1200 2200
+AR Path="/5CC2B452/5CC45ABF" Ref="P?"  Part="1" 
+AR Path="/5CC45ABF" Ref="P2"  Part="1" 
+F 0 "P2" H 1200 2300 50  0000 C CNN
+F 1 "CONN_01X01" V 1300 2200 50  0000 C CNN
+F 2 "LibreSolar:Wuerth_WP-THRBU_74650195" H 1200 2200 50  0001 C CNN
+F 3 "" H 1200 2200 50  0000 C CNN
+F 4 "Wuerth" H -400 -2600 60  0001 C CNN "Manufacturer"
+F 5 "74650195" H -400 -2600 60  0001 C CNN "PartNumber"
+	1    1200 2200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1400 1600 2000 1600
+Wire Wire Line
+	4800 1600 5300 1600
+Wire Wire Line
+	5000 2200 5300 2200
+Text Label 1800 2200 2    50   ~ 0
+BAT-
+Wire Wire Line
+	1400 2200 1800 2200
+Wire Wire Line
+	2500 2200 2800 2200
+Text Label 2500 2200 0    50   ~ 0
+BAT-
+Text Label 5000 1600 0    50   ~ 0
+EXT+
+Wire Wire Line
+	6400 4900 6800 4900
+Text Notes 1600 5700 0    50   ~ 0
+Plug part no. \n662014113322
+$EndSCHEMATC

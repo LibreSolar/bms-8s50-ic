@@ -1,0 +1,2529 @@
+EESchema Schematic File Version 4
+LIBS:bms-8s50-ic-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title "BMS 8S50 IC"
+Date ""
+Rev "0.1"
+Comp "Libre Solar"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LibreSolar:ISL94202 U7
+U 1 1 5C64EE13
+P 5500 3100
+F 0 "U7" H 4750 1650 60  0000 C CNN
+F 1 "ISL94202" H 6100 1650 60  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-48-1EP_6x6mm_P0.4mm_EP4.3x4.3mm" H 5500 1050 60  0001 C CNN
+F 3 "" H 5500 3100 60  0000 C CNN
+F 4 "Intersil" H 5500 3100 50  0001 C CNN "Manufacturer"
+F 5 "ISL94202IRTZ-T7A" H 5500 3100 50  0001 C CNN "PartNumber"
+	1    5500 3100
+	1    0    0    -1  
+$EndComp
+Text Notes 4700 7500 0    50   ~ 0
+Balancing (33R resistors)\nCurrent: 100-130 mA (3.3-4.2 V)\nHeat dissipation: 300-600 mW
+$Comp
+L Project:C C?
+U 1 1 5C656B78
+P 5400 6200
+AR Path="/58ACC63A/5C656B78" Ref="C?"  Part="1" 
+AR Path="/5C64ED50/5C656B78" Ref="C10"  Part="1" 
+F 0 "C10" H 5425 6275 50  0000 L CNN
+F 1 "10n" H 5425 6125 50  0000 L CNN
+F 2 "LibreSolar:C_0603_1608" H 5400 6000 50  0001 C CNN
+F 3 "" H 5425 6275 50  0000 C CNN
+	1    5400 6200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Project:C C?
+U 1 1 5C656B81
+P 5700 6500
+AR Path="/58ACC63A/5C656B81" Ref="C?"  Part="1" 
+AR Path="/5C64ED50/5C656B81" Ref="C11"  Part="1" 
+F 0 "C11" H 5725 6575 50  0000 L CNN
+F 1 "1u" H 5725 6425 50  0000 L CNN
+F 2 "LibreSolar:C_0603_1608" H 5700 6300 50  0001 C CNN
+F 3 "" H 5725 6575 50  0000 C CNN
+F 4 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "GRT188R61H105KE13D" H 0   0   50  0001 C CNN "PartNumber"
+F 6 "50V, X5R" H 0   0   50  0001 C CNN "Remarks"
+	1    5700 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Project:C C?
+U 1 1 5C656B8A
+P 5100 6500
+AR Path="/58ACC63A/5C656B8A" Ref="C?"  Part="1" 
+AR Path="/5C64ED50/5C656B8A" Ref="C9"  Part="1" 
+F 0 "C9" H 5075 6575 50  0000 R CNN
+F 1 "1u" H 5075 6425 50  0000 R CNN
+F 2 "LibreSolar:C_0603_1608" H 5100 6300 50  0001 C CNN
+F 3 "" H 5125 6575 50  0000 C CNN
+F 4 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "GRT188R61H105KE13D" H 0   0   50  0001 C CNN "PartNumber"
+F 6 "50V, X5R" H 0   0   50  0001 C CNN "Remarks"
+	1    5100 6500
+	1    0    0    -1  
+$EndComp
+Text Notes 4750 5650 0    100  ~ 0
+Current sense filter
+$Comp
+L power:GND #PWR?
+U 1 1 5C656BA4
+P 5700 6700
+AR Path="/58ACC63A/5C656BA4" Ref="#PWR?"  Part="1" 
+AR Path="/5C64ED50/5C656BA4" Ref="#PWR012"  Part="1" 
+F 0 "#PWR012" H 5700 6450 50  0001 C CNN
+F 1 "GND" H 5700 6550 50  0000 C CNN
+F 2 "" H 5700 6700 50  0000 C CNN
+F 3 "" H 5700 6700 50  0000 C CNN
+	1    5700 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C656BB0
+P 5100 6700
+AR Path="/58ACC63A/5C656BB0" Ref="#PWR?"  Part="1" 
+AR Path="/5C64ED50/5C656BB0" Ref="#PWR09"  Part="1" 
+F 0 "#PWR09" H 5100 6450 50  0001 C CNN
+F 1 "GND" H 5100 6550 50  0000 C CNN
+F 2 "" H 5100 6700 50  0000 C CNN
+F 3 "" H 5100 6700 50  0000 C CNN
+	1    5100 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Project:R R?
+U 1 1 5C656BBE
+P 2600 1000
+AR Path="/58ACC63A/5C656BBE" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5C656BBE" Ref="R17"  Part="1" 
+F 0 "R17" V 2525 1000 50  0000 C CNN
+F 1 "1k" V 2675 1000 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V 2425 900 50  0001 C CNN
+F 3 "" H 2600 1000 50  0000 C CNN
+F 4 "Yageo" H -500 -100 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071KL" H -500 -100 60  0001 C CNN "PartNumber"
+	1    2600 1000
+	0    1    1    0   
+$EndComp
+$Comp
+L Project:R R?
+U 1 1 5C656BC7
+P 2600 1800
+AR Path="/58ACC63A/5C656BC7" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5C656BC7" Ref="R18"  Part="1" 
+F 0 "R18" V 2525 1800 50  0000 C CNN
+F 1 "1k" V 2675 1800 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V 2425 1700 50  0001 C CNN
+F 3 "" H 2600 1800 50  0000 C CNN
+F 4 "Yageo" H -500 -100 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071KL" H -500 -100 60  0001 C CNN "PartNumber"
+	1    2600 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Project:R R?
+U 1 1 5C656C21
+P 1900 1600
+AR Path="/58ACC63A/5C656C21" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5C656C21" Ref="R1"  Part="1" 
+F 0 "R1" V 1825 1600 50  0000 C CNN
+F 1 "33" V 1975 1600 50  0000 C CNN
+F 2 "LibreSolar:R_2010_5025" V 1725 1500 50  0001 C CNN
+F 3 "" H 1900 1600 50  0000 C CNN
+F 4 "Yageo" H 0   300 60  0001 C CNN "Manufacturer"
+F 5 "RC2010JK-0733RL" H 0   300 60  0001 C CNN "PartNumber"
+	1    1900 1600
+	1    0    0    1   
+$EndComp
+$Comp
+L Project:C C?
+U 1 1 5C656C4E
+P 3000 1200
+AR Path="/58ACC63A/5C656C4E" Ref="C?"  Part="1" 
+AR Path="/5C64ED50/5C656C4E" Ref="C1"  Part="1" 
+F 0 "C1" H 3025 1275 50  0000 L CNN
+F 1 "47n" H 3025 1125 50  0000 L CNN
+F 2 "LibreSolar:C_0603_1608" H 3000 1000 50  0001 C CNN
+F 3 "" H 3025 1275 50  0000 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0603KRX7R9BB473" H 0   0   50  0001 C CNN "PartNumber"
+	1    3000 1200
+	1    0    0    -1  
+$EndComp
+Text Label 4300 4100 0    50   ~ 0
+VC0
+Text Label 4300 3900 0    50   ~ 0
+VC1
+Text Label 4300 3700 0    50   ~ 0
+VC2
+Text Label 4300 3500 0    50   ~ 0
+VC3
+Text Label 4300 3300 0    50   ~ 0
+VC4
+Text Label 4300 3100 0    50   ~ 0
+VC5
+Text Label 3300 1800 2    50   ~ 0
+VC7
+Wire Wire Line
+	4300 4100 4500 4100
+Wire Wire Line
+	5700 6200 5700 6400
+Wire Wire Line
+	5100 6200 5100 6400
+Wire Wire Line
+	5100 6600 5100 6700
+Wire Wire Line
+	5700 6600 5700 6700
+Wire Wire Line
+	4500 3900 4300 3900
+Wire Wire Line
+	4500 3700 4300 3700
+Wire Wire Line
+	4500 3500 4300 3500
+Wire Wire Line
+	4500 3300 4300 3300
+Wire Wire Line
+	4500 3100 4300 3100
+Wire Wire Line
+	2700 1000 3000 1000
+$Comp
+L power:GND #PWR?
+U 1 1 5C682A37
+P 3000 1300
+AR Path="/58ACC63A/5C682A37" Ref="#PWR?"  Part="1" 
+AR Path="/5C64ED50/5C682A37" Ref="#PWR01"  Part="1" 
+F 0 "#PWR01" H 3000 1050 50  0001 C CNN
+F 1 "GND" H 3000 1150 50  0000 C CNN
+F 2 "" H 3000 1300 50  0000 C CNN
+F 3 "" H 3000 1300 50  0000 C CNN
+	1    3000 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Project:R R?
+U 1 1 5C682EC5
+P 2400 1200
+AR Path="/58ACC63A/5C682EC5" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5C682EC5" Ref="R9"  Part="1" 
+F 0 "R9" V 2325 1200 50  0000 C CNN
+F 1 "330k" V 2475 1200 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V 2225 1100 50  0001 C CNN
+F 3 "" H 2400 1200 50  0000 C CNN
+F 4 "Yageo" H -1000 -500 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-07330KL" H -1000 -500 60  0001 C CNN "PartNumber"
+	1    2400 1200
+	1    0    0    1   
+$EndComp
+$Comp
+L Project:Q_PMOS_GSD Q?
+U 1 1 5C69D992
+P 2000 1300
+AR Path="/58ACC63A/5C69D992" Ref="Q?"  Part="1" 
+AR Path="/5C64ED50/5C69D992" Ref="Q1"  Part="1" 
+F 0 "Q1" H 2300 1350 50  0000 R CNN
+F 1 "NDS0605" H 2550 1250 50  0000 R CNN
+F 2 "LibreSolar:SOT-23" H 2200 1400 50  0001 C CNN
+F 3 "" H 2000 1300 50  0000 C CNN
+F 4 "ON Semiconductor / Fairchild" H -400 -1100 60  0001 C CNN "Manufacturer"
+F 5 "NDS0605" H -400 -1100 60  0001 C CNN "PartNumber"
+	1    2000 1300
+	-1   0    0    1   
+$EndComp
+Text Label 3300 1000 2    50   ~ 0
+VC8
+$Comp
+L Project:R R?
+U 1 1 5C6EDEE5
+P 2800 1600
+AR Path="/58ACC63A/5C6EDEE5" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5C6EDEE5" Ref="R45"  Part="1" 
+F 0 "R45" V 2725 1600 50  0000 C CNN
+F 1 "10k" V 2875 1600 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V 2625 1500 50  0001 C CNN
+F 3 "" H 2800 1600 50  0000 C CNN
+F 4 "Yageo" H -300 500 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" H -300 500 60  0001 C CNN "PartNumber"
+	1    2800 1600
+	0    1    1    0   
+$EndComp
+Text Label 3300 1600 2    50   ~ 0
+CB8
+Wire Wire Line
+	2900 1600 3300 1600
+Wire Wire Line
+	2400 1300 2400 1400
+Wire Wire Line
+	2400 1400 2200 1400
+Wire Wire Line
+	2400 1100 2400 1000
+Connection ~ 2400 1000
+Wire Wire Line
+	2400 1000 2500 1000
+Wire Wire Line
+	3000 1000 3000 1100
+Connection ~ 3000 1000
+Wire Wire Line
+	3000 1000 3300 1000
+Wire Wire Line
+	2400 1400 2400 1600
+Wire Wire Line
+	2400 1600 2700 1600
+Connection ~ 2400 1400
+Wire Wire Line
+	2700 1800 3000 1800
+Wire Wire Line
+	1700 1800 1900 1800
+Wire Wire Line
+	1700 1000 1900 1000
+Wire Wire Line
+	1900 1000 1900 1100
+Connection ~ 1900 1000
+Wire Wire Line
+	1900 1000 2400 1000
+Wire Wire Line
+	1900 1700 1900 1800
+Connection ~ 1900 1800
+Wire Wire Line
+	1900 1800 2400 1800
+Wire Wire Line
+	2200 1400 2200 1300
+$Comp
+L Project:R R?
+U 1 1 5C96D8FA
+P 2600 2600
+AR Path="/58ACC63A/5C96D8FA" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5C96D8FA" Ref="R19"  Part="1" 
+F 0 "R19" V 2525 2600 50  0000 C CNN
+F 1 "1k" V 2675 2600 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V 2425 2500 50  0001 C CNN
+F 3 "" H 2600 2600 50  0000 C CNN
+F 4 "Yageo" H -500 700 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071KL" H -500 700 60  0001 C CNN "PartNumber"
+	1    2600 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Project:R R?
+U 1 1 5C96D903
+P 1900 2400
+AR Path="/58ACC63A/5C96D903" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5C96D903" Ref="R2"  Part="1" 
+F 0 "R2" V 1825 2400 50  0000 C CNN
+F 1 "33" V 1975 2400 50  0000 C CNN
+F 2 "LibreSolar:R_2010_5025" V 1725 2300 50  0001 C CNN
+F 3 "" H 1900 2400 50  0000 C CNN
+F 4 "Yageo" H 0   1100 60  0001 C CNN "Manufacturer"
+F 5 "RC2010JK-0733RL" H 0   1100 60  0001 C CNN "PartNumber"
+	1    1900 2400
+	1    0    0    1   
+$EndComp
+$Comp
+L Project:C C?
+U 1 1 5C96D90A
+P 3000 2000
+AR Path="/58ACC63A/5C96D90A" Ref="C?"  Part="1" 
+AR Path="/5C64ED50/5C96D90A" Ref="C2"  Part="1" 
+F 0 "C2" H 3025 2075 50  0000 L CNN
+F 1 "47n" H 3025 1925 50  0000 L CNN
+F 2 "LibreSolar:C_0603_1608" H 3000 1800 50  0001 C CNN
+F 3 "" H 3025 2075 50  0000 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0603KRX7R9BB473" H 0   0   50  0001 C CNN "PartNumber"
+	1    3000 2000
+	1    0    0    -1  
+$EndComp
+Text Label 3300 2600 2    50   ~ 0
+VC6
+$Comp
+L power:GND #PWR?
+U 1 1 5C96D913
+P 3000 2100
+AR Path="/58ACC63A/5C96D913" Ref="#PWR?"  Part="1" 
+AR Path="/5C64ED50/5C96D913" Ref="#PWR02"  Part="1" 
+F 0 "#PWR02" H 3000 1850 50  0001 C CNN
+F 1 "GND" H 3000 1950 50  0000 C CNN
+F 2 "" H 3000 2100 50  0000 C CNN
+F 3 "" H 3000 2100 50  0000 C CNN
+	1    3000 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Project:R R?
+U 1 1 5C96D91B
+P 2400 2000
+AR Path="/58ACC63A/5C96D91B" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5C96D91B" Ref="R10"  Part="1" 
+F 0 "R10" V 2325 2000 50  0000 C CNN
+F 1 "330k" V 2475 2000 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V 2225 1900 50  0001 C CNN
+F 3 "" H 2400 2000 50  0000 C CNN
+F 4 "Yageo" H -1000 300 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-07330KL" H -1000 300 60  0001 C CNN "PartNumber"
+	1    2400 2000
+	1    0    0    1   
+$EndComp
+$Comp
+L Project:Q_PMOS_GSD Q?
+U 1 1 5C96D924
+P 2000 2100
+AR Path="/58ACC63A/5C96D924" Ref="Q?"  Part="1" 
+AR Path="/5C64ED50/5C96D924" Ref="Q2"  Part="1" 
+F 0 "Q2" H 2300 2150 50  0000 R CNN
+F 1 "NDS0605" H 2550 2050 50  0000 R CNN
+F 2 "LibreSolar:SOT-23" H 2200 2200 50  0001 C CNN
+F 3 "" H 2000 2100 50  0000 C CNN
+F 4 "ON Semiconductor / Fairchild" H -400 -300 60  0001 C CNN "Manufacturer"
+F 5 "NDS0605" H -400 -300 60  0001 C CNN "PartNumber"
+	1    2000 2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Project:R R?
+U 1 1 5C96D92D
+P 2800 2400
+AR Path="/58ACC63A/5C96D92D" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5C96D92D" Ref="R46"  Part="1" 
+F 0 "R46" V 2725 2400 50  0000 C CNN
+F 1 "10k" V 2875 2400 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V 2625 2300 50  0001 C CNN
+F 3 "" H 2800 2400 50  0000 C CNN
+F 4 "Yageo" H -300 1300 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" H -300 1300 60  0001 C CNN "PartNumber"
+	1    2800 2400
+	0    1    1    0   
+$EndComp
+Text Label 3300 2400 2    50   ~ 0
+CB7
+Wire Wire Line
+	2900 2400 3300 2400
+Wire Wire Line
+	2400 2100 2400 2200
+Wire Wire Line
+	2400 2200 2200 2200
+Wire Wire Line
+	2400 1900 2400 1800
+Wire Wire Line
+	3000 1800 3000 1900
+Wire Wire Line
+	2400 2200 2400 2400
+Wire Wire Line
+	2400 2400 2700 2400
+Connection ~ 2400 2200
+Wire Wire Line
+	2700 2600 3000 2600
+Wire Wire Line
+	1700 2600 1900 2600
+Wire Wire Line
+	1900 1800 1900 1900
+Wire Wire Line
+	1900 2500 1900 2600
+Connection ~ 1900 2600
+Wire Wire Line
+	1900 2600 2400 2600
+Wire Wire Line
+	2200 2200 2200 2100
+$Comp
+L Project:R R?
+U 1 1 5C979F4A
+P 2600 3400
+AR Path="/58ACC63A/5C979F4A" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5C979F4A" Ref="R20"  Part="1" 
+F 0 "R20" V 2525 3400 50  0000 C CNN
+F 1 "1k" V 2675 3400 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V 2425 3300 50  0001 C CNN
+F 3 "" H 2600 3400 50  0000 C CNN
+F 4 "Yageo" H -500 1500 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071KL" H -500 1500 60  0001 C CNN "PartNumber"
+	1    2600 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Project:R R?
+U 1 1 5C979F53
+P 1900 3200
+AR Path="/58ACC63A/5C979F53" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5C979F53" Ref="R3"  Part="1" 
+F 0 "R3" V 1825 3200 50  0000 C CNN
+F 1 "33" V 1975 3200 50  0000 C CNN
+F 2 "LibreSolar:R_2010_5025" V 1725 3100 50  0001 C CNN
+F 3 "" H 1900 3200 50  0000 C CNN
+F 4 "Yageo" H 0   1900 60  0001 C CNN "Manufacturer"
+F 5 "RC2010JK-0733RL" H 0   1900 60  0001 C CNN "PartNumber"
+	1    1900 3200
+	1    0    0    1   
+$EndComp
+$Comp
+L Project:C C?
+U 1 1 5C979F5A
+P 3000 2800
+AR Path="/58ACC63A/5C979F5A" Ref="C?"  Part="1" 
+AR Path="/5C64ED50/5C979F5A" Ref="C3"  Part="1" 
+F 0 "C3" H 3025 2875 50  0000 L CNN
+F 1 "47n" H 3025 2725 50  0000 L CNN
+F 2 "LibreSolar:C_0603_1608" H 3000 2600 50  0001 C CNN
+F 3 "" H 3025 2875 50  0000 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0603KRX7R9BB473" H 0   0   50  0001 C CNN "PartNumber"
+	1    3000 2800
+	1    0    0    -1  
+$EndComp
+Text Label 3300 3400 2    50   ~ 0
+VC5
+$Comp
+L power:GND #PWR?
+U 1 1 5C979F63
+P 3000 2900
+AR Path="/58ACC63A/5C979F63" Ref="#PWR?"  Part="1" 
+AR Path="/5C64ED50/5C979F63" Ref="#PWR03"  Part="1" 
+F 0 "#PWR03" H 3000 2650 50  0001 C CNN
+F 1 "GND" H 3000 2750 50  0000 C CNN
+F 2 "" H 3000 2900 50  0000 C CNN
+F 3 "" H 3000 2900 50  0000 C CNN
+	1    3000 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Project:R R?
+U 1 1 5C979F6B
+P 2400 2800
+AR Path="/58ACC63A/5C979F6B" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5C979F6B" Ref="R11"  Part="1" 
+F 0 "R11" V 2325 2800 50  0000 C CNN
+F 1 "330k" V 2475 2800 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V 2225 2700 50  0001 C CNN
+F 3 "" H 2400 2800 50  0000 C CNN
+F 4 "Yageo" H -1000 1100 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-07330KL" H -1000 1100 60  0001 C CNN "PartNumber"
+	1    2400 2800
+	1    0    0    1   
+$EndComp
+$Comp
+L Project:Q_PMOS_GSD Q?
+U 1 1 5C979F74
+P 2000 2900
+AR Path="/58ACC63A/5C979F74" Ref="Q?"  Part="1" 
+AR Path="/5C64ED50/5C979F74" Ref="Q3"  Part="1" 
+F 0 "Q3" H 2300 2950 50  0000 R CNN
+F 1 "NDS0605" H 2550 2850 50  0000 R CNN
+F 2 "LibreSolar:SOT-23" H 2200 3000 50  0001 C CNN
+F 3 "" H 2000 2900 50  0000 C CNN
+F 4 "ON Semiconductor / Fairchild" H -400 500 60  0001 C CNN "Manufacturer"
+F 5 "NDS0605" H -400 500 60  0001 C CNN "PartNumber"
+	1    2000 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Project:R R?
+U 1 1 5C979F7D
+P 2800 3200
+AR Path="/58ACC63A/5C979F7D" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5C979F7D" Ref="R47"  Part="1" 
+F 0 "R47" V 2725 3200 50  0000 C CNN
+F 1 "10k" V 2875 3200 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V 2625 3100 50  0001 C CNN
+F 3 "" H 2800 3200 50  0000 C CNN
+F 4 "Yageo" H -300 2100 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" H -300 2100 60  0001 C CNN "PartNumber"
+	1    2800 3200
+	0    1    1    0   
+$EndComp
+Text Label 3300 3200 2    50   ~ 0
+CB6
+Wire Wire Line
+	2900 3200 3300 3200
+Wire Wire Line
+	2400 2900 2400 3000
+Wire Wire Line
+	2400 3000 2200 3000
+Wire Wire Line
+	2400 2700 2400 2600
+Wire Wire Line
+	3000 2600 3000 2700
+Wire Wire Line
+	2400 3000 2400 3200
+Wire Wire Line
+	2400 3200 2700 3200
+Connection ~ 2400 3000
+Wire Wire Line
+	2700 3400 3000 3400
+Wire Wire Line
+	1700 3400 1900 3400
+Wire Wire Line
+	1900 2600 1900 2700
+Wire Wire Line
+	1900 3300 1900 3400
+Connection ~ 1900 3400
+Wire Wire Line
+	1900 3400 2500 3400
+Wire Wire Line
+	2200 3000 2200 2900
+$Comp
+L Project:R R?
+U 1 1 5C98775A
+P 2600 4200
+AR Path="/58ACC63A/5C98775A" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5C98775A" Ref="R21"  Part="1" 
+F 0 "R21" V 2525 4200 50  0000 C CNN
+F 1 "1k" V 2675 4200 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V 2425 4100 50  0001 C CNN
+F 3 "" H 2600 4200 50  0000 C CNN
+F 4 "Yageo" H -500 2300 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071KL" H -500 2300 60  0001 C CNN "PartNumber"
+	1    2600 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L Project:R R?
+U 1 1 5C987763
+P 1900 3600
+AR Path="/58ACC63A/5C987763" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5C987763" Ref="R4"  Part="1" 
+F 0 "R4" V 1825 3600 50  0000 C CNN
+F 1 "33" V 1975 3600 50  0000 C CNN
+F 2 "LibreSolar:R_2010_5025" V 1725 3500 50  0001 C CNN
+F 3 "" H 1900 3600 50  0000 C CNN
+F 4 "Yageo" H 0   2300 60  0001 C CNN "Manufacturer"
+F 5 "RC2010JK-0733RL" H 0   2300 60  0001 C CNN "PartNumber"
+	1    1900 3600
+	1    0    0    1   
+$EndComp
+$Comp
+L Project:C C?
+U 1 1 5C98776A
+P 3000 3600
+AR Path="/58ACC63A/5C98776A" Ref="C?"  Part="1" 
+AR Path="/5C64ED50/5C98776A" Ref="C4"  Part="1" 
+F 0 "C4" H 3025 3675 50  0000 L CNN
+F 1 "47n" H 3025 3525 50  0000 L CNN
+F 2 "LibreSolar:C_0603_1608" H 3000 3400 50  0001 C CNN
+F 3 "" H 3025 3675 50  0000 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0603KRX7R9BB473" H 0   0   50  0001 C CNN "PartNumber"
+	1    3000 3600
+	1    0    0    -1  
+$EndComp
+Text Label 3300 4200 2    50   ~ 0
+VC4
+$Comp
+L power:GND #PWR?
+U 1 1 5C987773
+P 3000 3700
+AR Path="/58ACC63A/5C987773" Ref="#PWR?"  Part="1" 
+AR Path="/5C64ED50/5C987773" Ref="#PWR04"  Part="1" 
+F 0 "#PWR04" H 3000 3450 50  0001 C CNN
+F 1 "GND" H 3000 3550 50  0000 C CNN
+F 2 "" H 3000 3700 50  0000 C CNN
+F 3 "" H 3000 3700 50  0000 C CNN
+	1    3000 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Project:R R?
+U 1 1 5C98777B
+P 2400 4000
+AR Path="/58ACC63A/5C98777B" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5C98777B" Ref="R12"  Part="1" 
+F 0 "R12" V 2325 4000 50  0000 C CNN
+F 1 "330k" V 2475 4000 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V 2225 3900 50  0001 C CNN
+F 3 "" H 2400 4000 50  0000 C CNN
+F 4 "Yageo" H -1000 2300 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-07330KL" H -1000 2300 60  0001 C CNN "PartNumber"
+	1    2400 4000
+	1    0    0    1   
+$EndComp
+$Comp
+L Project:R R?
+U 1 1 5C98778D
+P 2800 4000
+AR Path="/58ACC63A/5C98778D" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5C98778D" Ref="R48"  Part="1" 
+F 0 "R48" V 2725 4000 50  0000 C CNN
+F 1 "10k" V 2875 4000 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V 2625 3900 50  0001 C CNN
+F 3 "" H 2800 4000 50  0000 C CNN
+F 4 "Yageo" H -300 2900 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" H -300 2900 60  0001 C CNN "PartNumber"
+	1    2800 4000
+	0    1    1    0   
+$EndComp
+Text Label 3300 4000 2    50   ~ 0
+CB5
+Wire Wire Line
+	2900 4000 3300 4000
+Wire Wire Line
+	3000 3400 3000 3500
+Wire Wire Line
+	2700 4200 3000 4200
+Wire Wire Line
+	1700 4200 1900 4200
+Wire Wire Line
+	1900 3400 1900 3500
+Wire Wire Line
+	1900 4100 1900 4200
+Connection ~ 1900 4200
+Wire Wire Line
+	1900 4200 2400 4200
+$Comp
+L Project:Q_NMOS_GSD Q?
+U 1 1 5C999C32
+P 2000 3900
+AR Path="/58ACC63A/5C999C32" Ref="Q?"  Part="1" 
+AR Path="/5C64ED50/5C999C32" Ref="Q4"  Part="1" 
+F 0 "Q4" H 2300 3950 50  0000 R CNN
+F 1 "BSS138" H 2500 3850 50  0000 R CNN
+F 2 "LibreSolar:SOT-23" H 2200 4000 50  0001 C CNN
+F 3 "" H 2000 3900 50  0000 C CNN
+F 4 "ON Semiconductor / Fairchild" H -400 -900 60  0001 C CNN "Manufacturer"
+F 5 "BSS138" H -400 -900 60  0001 C CNN "PartNumber"
+	1    2000 3900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 3900 2200 3800
+Wire Wire Line
+	2200 3800 2400 3800
+Wire Wire Line
+	2400 3800 2400 3900
+Wire Wire Line
+	2400 4100 2400 4200
+Connection ~ 2400 4200
+Wire Wire Line
+	2400 4200 2500 4200
+Wire Wire Line
+	2400 3800 2600 3800
+Wire Wire Line
+	2600 3800 2600 4000
+Wire Wire Line
+	2600 4000 2700 4000
+Connection ~ 2400 3800
+Connection ~ 3000 3400
+Wire Wire Line
+	3000 3400 3300 3400
+Connection ~ 2400 2600
+Wire Wire Line
+	2400 2600 2500 2600
+Connection ~ 3000 2600
+Wire Wire Line
+	3000 2600 3300 2600
+Connection ~ 2400 1800
+Wire Wire Line
+	2400 1800 2500 1800
+Connection ~ 3000 1800
+Wire Wire Line
+	3000 1800 3300 1800
+$Comp
+L Project:R R?
+U 1 1 5CA4B911
+P 2600 5000
+AR Path="/58ACC63A/5CA4B911" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5CA4B911" Ref="R22"  Part="1" 
+F 0 "R22" V 2525 5000 50  0000 C CNN
+F 1 "1k" V 2675 5000 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V 2425 4900 50  0001 C CNN
+F 3 "" H 2600 5000 50  0000 C CNN
+F 4 "Yageo" H -500 3100 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071KL" H -500 3100 60  0001 C CNN "PartNumber"
+	1    2600 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L Project:R R?
+U 1 1 5CA4B919
+P 1900 4400
+AR Path="/58ACC63A/5CA4B919" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5CA4B919" Ref="R5"  Part="1" 
+F 0 "R5" V 1825 4400 50  0000 C CNN
+F 1 "33" V 1975 4400 50  0000 C CNN
+F 2 "LibreSolar:R_2010_5025" V 1725 4300 50  0001 C CNN
+F 3 "" H 1900 4400 50  0000 C CNN
+F 4 "Yageo" H 0   3100 60  0001 C CNN "Manufacturer"
+F 5 "RC2010JK-0733RL" H 0   3100 60  0001 C CNN "PartNumber"
+	1    1900 4400
+	1    0    0    1   
+$EndComp
+$Comp
+L Project:C C?
+U 1 1 5CA4B91F
+P 3000 4400
+AR Path="/58ACC63A/5CA4B91F" Ref="C?"  Part="1" 
+AR Path="/5C64ED50/5CA4B91F" Ref="C5"  Part="1" 
+F 0 "C5" H 3025 4475 50  0000 L CNN
+F 1 "47n" H 3025 4325 50  0000 L CNN
+F 2 "LibreSolar:C_0603_1608" H 3000 4200 50  0001 C CNN
+F 3 "" H 3025 4475 50  0000 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0603KRX7R9BB473" H 0   0   50  0001 C CNN "PartNumber"
+	1    3000 4400
+	1    0    0    -1  
+$EndComp
+Text Label 3300 5000 2    50   ~ 0
+VC3
+$Comp
+L power:GND #PWR?
+U 1 1 5CA4B927
+P 3000 4500
+AR Path="/58ACC63A/5CA4B927" Ref="#PWR?"  Part="1" 
+AR Path="/5C64ED50/5CA4B927" Ref="#PWR05"  Part="1" 
+F 0 "#PWR05" H 3000 4250 50  0001 C CNN
+F 1 "GND" H 3000 4350 50  0000 C CNN
+F 2 "" H 3000 4500 50  0000 C CNN
+F 3 "" H 3000 4500 50  0000 C CNN
+	1    3000 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Project:R R?
+U 1 1 5CA4B92F
+P 2400 4800
+AR Path="/58ACC63A/5CA4B92F" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5CA4B92F" Ref="R13"  Part="1" 
+F 0 "R13" V 2325 4800 50  0000 C CNN
+F 1 "330k" V 2475 4800 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V 2225 4700 50  0001 C CNN
+F 3 "" H 2400 4800 50  0000 C CNN
+F 4 "Yageo" H -1000 3100 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-07330KL" H -1000 3100 60  0001 C CNN "PartNumber"
+	1    2400 4800
+	1    0    0    1   
+$EndComp
+$Comp
+L Project:R R?
+U 1 1 5CA4B937
+P 2800 4800
+AR Path="/58ACC63A/5CA4B937" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5CA4B937" Ref="R49"  Part="1" 
+F 0 "R49" V 2725 4800 50  0000 C CNN
+F 1 "10k" V 2875 4800 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V 2625 4700 50  0001 C CNN
+F 3 "" H 2800 4800 50  0000 C CNN
+F 4 "Yageo" H -300 3700 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" H -300 3700 60  0001 C CNN "PartNumber"
+	1    2800 4800
+	0    1    1    0   
+$EndComp
+Text Label 3300 4800 2    50   ~ 0
+CB4
+Wire Wire Line
+	2900 4800 3300 4800
+Wire Wire Line
+	3000 4200 3000 4300
+Wire Wire Line
+	1700 5000 1900 5000
+Wire Wire Line
+	1900 4200 1900 4300
+Wire Wire Line
+	1900 4900 1900 5000
+Connection ~ 1900 5000
+Wire Wire Line
+	1900 5000 2400 5000
+$Comp
+L Project:Q_NMOS_GSD Q?
+U 1 1 5CA4B948
+P 2000 4700
+AR Path="/58ACC63A/5CA4B948" Ref="Q?"  Part="1" 
+AR Path="/5C64ED50/5CA4B948" Ref="Q5"  Part="1" 
+F 0 "Q5" H 2300 4750 50  0000 R CNN
+F 1 "BSS138" H 2500 4650 50  0000 R CNN
+F 2 "LibreSolar:SOT-23" H 2200 4800 50  0001 C CNN
+F 3 "" H 2000 4700 50  0000 C CNN
+F 4 "ON Semiconductor / Fairchild" H -400 -100 60  0001 C CNN "Manufacturer"
+F 5 "BSS138" H -400 -100 60  0001 C CNN "PartNumber"
+	1    2000 4700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 4700 2200 4600
+Wire Wire Line
+	2200 4600 2400 4600
+Wire Wire Line
+	2400 4600 2400 4700
+Wire Wire Line
+	2400 4900 2400 5000
+Connection ~ 2400 5000
+Wire Wire Line
+	2400 5000 2500 5000
+Wire Wire Line
+	2400 4600 2600 4600
+Wire Wire Line
+	2600 4600 2600 4800
+Wire Wire Line
+	2600 4800 2700 4800
+Connection ~ 2400 4600
+Connection ~ 3000 4200
+Wire Wire Line
+	3000 4200 3300 4200
+$Comp
+L Project:R R?
+U 1 1 5CA5D421
+P 2600 5800
+AR Path="/58ACC63A/5CA5D421" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5CA5D421" Ref="R23"  Part="1" 
+F 0 "R23" V 2525 5800 50  0000 C CNN
+F 1 "1k" V 2675 5800 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V 2425 5700 50  0001 C CNN
+F 3 "" H 2600 5800 50  0000 C CNN
+F 4 "Yageo" H -500 3900 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071KL" H -500 3900 60  0001 C CNN "PartNumber"
+	1    2600 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L Project:R R?
+U 1 1 5CA5D42A
+P 1900 5200
+AR Path="/58ACC63A/5CA5D42A" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5CA5D42A" Ref="R6"  Part="1" 
+F 0 "R6" V 1825 5200 50  0000 C CNN
+F 1 "33" V 1975 5200 50  0000 C CNN
+F 2 "LibreSolar:R_2010_5025" V 1725 5100 50  0001 C CNN
+F 3 "" H 1900 5200 50  0000 C CNN
+F 4 "Yageo" H 0   3900 60  0001 C CNN "Manufacturer"
+F 5 "RC2010JK-0733RL" H 0   3900 60  0001 C CNN "PartNumber"
+	1    1900 5200
+	1    0    0    1   
+$EndComp
+$Comp
+L Project:C C?
+U 1 1 5CA5D431
+P 3000 5200
+AR Path="/58ACC63A/5CA5D431" Ref="C?"  Part="1" 
+AR Path="/5C64ED50/5CA5D431" Ref="C6"  Part="1" 
+F 0 "C6" H 3025 5275 50  0000 L CNN
+F 1 "47n" H 3025 5125 50  0000 L CNN
+F 2 "LibreSolar:C_0603_1608" H 3000 5000 50  0001 C CNN
+F 3 "" H 3025 5275 50  0000 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0603KRX7R9BB473" H 0   0   50  0001 C CNN "PartNumber"
+	1    3000 5200
+	1    0    0    -1  
+$EndComp
+Text Label 3300 5800 2    50   ~ 0
+VC2
+$Comp
+L power:GND #PWR?
+U 1 1 5CA5D43A
+P 3000 5300
+AR Path="/58ACC63A/5CA5D43A" Ref="#PWR?"  Part="1" 
+AR Path="/5C64ED50/5CA5D43A" Ref="#PWR06"  Part="1" 
+F 0 "#PWR06" H 3000 5050 50  0001 C CNN
+F 1 "GND" H 3000 5150 50  0000 C CNN
+F 2 "" H 3000 5300 50  0000 C CNN
+F 3 "" H 3000 5300 50  0000 C CNN
+	1    3000 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Project:R R?
+U 1 1 5CA5D442
+P 2400 5600
+AR Path="/58ACC63A/5CA5D442" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5CA5D442" Ref="R14"  Part="1" 
+F 0 "R14" V 2325 5600 50  0000 C CNN
+F 1 "330k" V 2475 5600 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V 2225 5500 50  0001 C CNN
+F 3 "" H 2400 5600 50  0000 C CNN
+F 4 "Yageo" H -1000 3900 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-07330KL" H -1000 3900 60  0001 C CNN "PartNumber"
+	1    2400 5600
+	1    0    0    1   
+$EndComp
+$Comp
+L Project:R R?
+U 1 1 5CA5D44B
+P 2800 5600
+AR Path="/58ACC63A/5CA5D44B" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5CA5D44B" Ref="R50"  Part="1" 
+F 0 "R50" V 2725 5600 50  0000 C CNN
+F 1 "10k" V 2875 5600 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V 2625 5500 50  0001 C CNN
+F 3 "" H 2800 5600 50  0000 C CNN
+F 4 "Yageo" H -300 4500 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" H -300 4500 60  0001 C CNN "PartNumber"
+	1    2800 5600
+	0    1    1    0   
+$EndComp
+Text Label 3300 5600 2    50   ~ 0
+CB3
+Wire Wire Line
+	2900 5600 3300 5600
+Wire Wire Line
+	3000 5000 3000 5100
+Wire Wire Line
+	2700 5800 3000 5800
+Wire Wire Line
+	1700 5800 1900 5800
+Wire Wire Line
+	1900 5000 1900 5100
+Wire Wire Line
+	1900 5700 1900 5800
+Connection ~ 1900 5800
+Wire Wire Line
+	1900 5800 2400 5800
+$Comp
+L Project:Q_NMOS_GSD Q?
+U 1 1 5CA5D45D
+P 2000 5500
+AR Path="/58ACC63A/5CA5D45D" Ref="Q?"  Part="1" 
+AR Path="/5C64ED50/5CA5D45D" Ref="Q6"  Part="1" 
+F 0 "Q6" H 2300 5550 50  0000 R CNN
+F 1 "BSS138" H 2500 5450 50  0000 R CNN
+F 2 "LibreSolar:SOT-23" H 2200 5600 50  0001 C CNN
+F 3 "" H 2000 5500 50  0000 C CNN
+F 4 "ON Semiconductor / Fairchild" H -400 700 60  0001 C CNN "Manufacturer"
+F 5 "BSS138" H -400 700 60  0001 C CNN "PartNumber"
+	1    2000 5500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 5500 2200 5400
+Wire Wire Line
+	2200 5400 2400 5400
+Wire Wire Line
+	2400 5400 2400 5500
+Wire Wire Line
+	2400 5700 2400 5800
+Connection ~ 2400 5800
+Wire Wire Line
+	2400 5800 2500 5800
+Wire Wire Line
+	2400 5400 2600 5400
+Wire Wire Line
+	2600 5400 2600 5600
+Wire Wire Line
+	2600 5600 2700 5600
+Connection ~ 2400 5400
+$Comp
+L Project:R R?
+U 1 1 5CA6FDD5
+P 2600 6600
+AR Path="/58ACC63A/5CA6FDD5" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5CA6FDD5" Ref="R24"  Part="1" 
+F 0 "R24" V 2525 6600 50  0000 C CNN
+F 1 "1k" V 2675 6600 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V 2425 6500 50  0001 C CNN
+F 3 "" H 2600 6600 50  0000 C CNN
+F 4 "Yageo" H -500 4700 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071KL" H -500 4700 60  0001 C CNN "PartNumber"
+	1    2600 6600
+	0    1    1    0   
+$EndComp
+$Comp
+L Project:R R?
+U 1 1 5CA6FDDE
+P 1900 6000
+AR Path="/58ACC63A/5CA6FDDE" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5CA6FDDE" Ref="R7"  Part="1" 
+F 0 "R7" V 1825 6000 50  0000 C CNN
+F 1 "33" V 1975 6000 50  0000 C CNN
+F 2 "LibreSolar:R_2010_5025" V 1725 5900 50  0001 C CNN
+F 3 "" H 1900 6000 50  0000 C CNN
+F 4 "Yageo" H 0   4700 60  0001 C CNN "Manufacturer"
+F 5 "RC2010JK-0733RL" H 0   4700 60  0001 C CNN "PartNumber"
+	1    1900 6000
+	1    0    0    1   
+$EndComp
+$Comp
+L Project:C C?
+U 1 1 5CA6FDE5
+P 3000 6000
+AR Path="/58ACC63A/5CA6FDE5" Ref="C?"  Part="1" 
+AR Path="/5C64ED50/5CA6FDE5" Ref="C7"  Part="1" 
+F 0 "C7" H 3025 6075 50  0000 L CNN
+F 1 "47n" H 3025 5925 50  0000 L CNN
+F 2 "LibreSolar:C_0603_1608" H 3000 5800 50  0001 C CNN
+F 3 "" H 3025 6075 50  0000 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0603KRX7R9BB473" H 0   0   50  0001 C CNN "PartNumber"
+	1    3000 6000
+	1    0    0    -1  
+$EndComp
+Text Label 3300 6600 2    50   ~ 0
+VC1
+$Comp
+L power:GND #PWR?
+U 1 1 5CA6FDEE
+P 3000 6100
+AR Path="/58ACC63A/5CA6FDEE" Ref="#PWR?"  Part="1" 
+AR Path="/5C64ED50/5CA6FDEE" Ref="#PWR07"  Part="1" 
+F 0 "#PWR07" H 3000 5850 50  0001 C CNN
+F 1 "GND" H 3000 5950 50  0000 C CNN
+F 2 "" H 3000 6100 50  0000 C CNN
+F 3 "" H 3000 6100 50  0000 C CNN
+	1    3000 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Project:R R?
+U 1 1 5CA6FDF6
+P 2400 6400
+AR Path="/58ACC63A/5CA6FDF6" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5CA6FDF6" Ref="R15"  Part="1" 
+F 0 "R15" V 2325 6400 50  0000 C CNN
+F 1 "330k" V 2475 6400 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V 2225 6300 50  0001 C CNN
+F 3 "" H 2400 6400 50  0000 C CNN
+F 4 "Yageo" H -1000 4700 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-07330KL" H -1000 4700 60  0001 C CNN "PartNumber"
+	1    2400 6400
+	1    0    0    1   
+$EndComp
+$Comp
+L Project:R R?
+U 1 1 5CA6FDFF
+P 2800 6400
+AR Path="/58ACC63A/5CA6FDFF" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5CA6FDFF" Ref="R51"  Part="1" 
+F 0 "R51" V 2725 6400 50  0000 C CNN
+F 1 "10k" V 2875 6400 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V 2625 6300 50  0001 C CNN
+F 3 "" H 2800 6400 50  0000 C CNN
+F 4 "Yageo" H -300 5300 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" H -300 5300 60  0001 C CNN "PartNumber"
+	1    2800 6400
+	0    1    1    0   
+$EndComp
+Text Label 3300 6400 2    50   ~ 0
+CB2
+Wire Wire Line
+	2900 6400 3300 6400
+Wire Wire Line
+	2700 6600 3000 6600
+Wire Wire Line
+	1700 6600 1900 6600
+Wire Wire Line
+	1900 5800 1900 5900
+Wire Wire Line
+	1900 6500 1900 6600
+Connection ~ 1900 6600
+Wire Wire Line
+	1900 6600 2400 6600
+$Comp
+L Project:Q_NMOS_GSD Q?
+U 1 1 5CA6FE11
+P 2000 6300
+AR Path="/58ACC63A/5CA6FE11" Ref="Q?"  Part="1" 
+AR Path="/5C64ED50/5CA6FE11" Ref="Q7"  Part="1" 
+F 0 "Q7" H 2300 6350 50  0000 R CNN
+F 1 "BSS138" H 2500 6250 50  0000 R CNN
+F 2 "LibreSolar:SOT-23" H 2200 6400 50  0001 C CNN
+F 3 "" H 2000 6300 50  0000 C CNN
+F 4 "ON Semiconductor / Fairchild" H -400 1500 60  0001 C CNN "Manufacturer"
+F 5 "BSS138" H -400 1500 60  0001 C CNN "PartNumber"
+	1    2000 6300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 6300 2200 6200
+Wire Wire Line
+	2200 6200 2400 6200
+Wire Wire Line
+	2400 6200 2400 6300
+Wire Wire Line
+	2400 6500 2400 6600
+Connection ~ 2400 6600
+Wire Wire Line
+	2400 6600 2500 6600
+Wire Wire Line
+	2400 6200 2600 6200
+Wire Wire Line
+	2600 6200 2600 6400
+Wire Wire Line
+	2600 6400 2700 6400
+Connection ~ 2400 6200
+$Comp
+L Project:R R?
+U 1 1 5CA8453B
+P 2600 7400
+AR Path="/58ACC63A/5CA8453B" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5CA8453B" Ref="R25"  Part="1" 
+F 0 "R25" V 2525 7400 50  0000 C CNN
+F 1 "1k" V 2675 7400 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V 2425 7300 50  0001 C CNN
+F 3 "" H 2600 7400 50  0000 C CNN
+F 4 "Yageo" H -500 5500 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071KL" H -500 5500 60  0001 C CNN "PartNumber"
+	1    2600 7400
+	0    1    1    0   
+$EndComp
+$Comp
+L Project:R R?
+U 1 1 5CA84544
+P 1900 6800
+AR Path="/58ACC63A/5CA84544" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5CA84544" Ref="R8"  Part="1" 
+F 0 "R8" V 1825 6800 50  0000 C CNN
+F 1 "33" V 1975 6800 50  0000 C CNN
+F 2 "LibreSolar:R_2010_5025" V 1725 6700 50  0001 C CNN
+F 3 "" H 1900 6800 50  0000 C CNN
+F 4 "Yageo" H 0   5500 60  0001 C CNN "Manufacturer"
+F 5 "RC2010JK-0733RL" H 0   5500 60  0001 C CNN "PartNumber"
+	1    1900 6800
+	1    0    0    1   
+$EndComp
+$Comp
+L Project:C C?
+U 1 1 5CA8454B
+P 3000 6800
+AR Path="/58ACC63A/5CA8454B" Ref="C?"  Part="1" 
+AR Path="/5C64ED50/5CA8454B" Ref="C8"  Part="1" 
+F 0 "C8" H 3025 6875 50  0000 L CNN
+F 1 "47n" H 3025 6725 50  0000 L CNN
+F 2 "LibreSolar:C_0603_1608" H 3000 6600 50  0001 C CNN
+F 3 "" H 3025 6875 50  0000 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0603KRX7R9BB473" H 0   0   50  0001 C CNN "PartNumber"
+	1    3000 6800
+	1    0    0    -1  
+$EndComp
+Text Label 3300 7400 2    50   ~ 0
+VC0
+$Comp
+L power:GND #PWR?
+U 1 1 5CA84554
+P 3000 6900
+AR Path="/58ACC63A/5CA84554" Ref="#PWR?"  Part="1" 
+AR Path="/5C64ED50/5CA84554" Ref="#PWR08"  Part="1" 
+F 0 "#PWR08" H 3000 6650 50  0001 C CNN
+F 1 "GND" H 3000 6750 50  0000 C CNN
+F 2 "" H 3000 6900 50  0000 C CNN
+F 3 "" H 3000 6900 50  0000 C CNN
+	1    3000 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Project:R R?
+U 1 1 5CA8455C
+P 2400 7200
+AR Path="/58ACC63A/5CA8455C" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5CA8455C" Ref="R16"  Part="1" 
+F 0 "R16" V 2325 7200 50  0000 C CNN
+F 1 "330k" V 2475 7200 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V 2225 7100 50  0001 C CNN
+F 3 "" H 2400 7200 50  0000 C CNN
+F 4 "Yageo" H -1000 5500 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-07330KL" H -1000 5500 60  0001 C CNN "PartNumber"
+	1    2400 7200
+	1    0    0    1   
+$EndComp
+$Comp
+L Project:R R?
+U 1 1 5CA84565
+P 2800 7200
+AR Path="/58ACC63A/5CA84565" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5CA84565" Ref="R52"  Part="1" 
+F 0 "R52" V 2725 7200 50  0000 C CNN
+F 1 "10k" V 2875 7200 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V 2625 7100 50  0001 C CNN
+F 3 "" H 2800 7200 50  0000 C CNN
+F 4 "Yageo" H -300 6100 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" H -300 6100 60  0001 C CNN "PartNumber"
+	1    2800 7200
+	0    1    1    0   
+$EndComp
+Text Label 3300 7200 2    50   ~ 0
+CB1
+Wire Wire Line
+	2900 7200 3300 7200
+Wire Wire Line
+	2700 7400 3300 7400
+Wire Wire Line
+	1700 7400 1900 7400
+Wire Wire Line
+	1900 6600 1900 6700
+Wire Wire Line
+	1900 7300 1900 7400
+Connection ~ 1900 7400
+Wire Wire Line
+	1900 7400 2400 7400
+$Comp
+L Project:Q_NMOS_GSD Q?
+U 1 1 5CA84577
+P 2000 7100
+AR Path="/58ACC63A/5CA84577" Ref="Q?"  Part="1" 
+AR Path="/5C64ED50/5CA84577" Ref="Q8"  Part="1" 
+F 0 "Q8" H 2300 7150 50  0000 R CNN
+F 1 "BSS138" H 2500 7050 50  0000 R CNN
+F 2 "LibreSolar:SOT-23" H 2200 7200 50  0001 C CNN
+F 3 "" H 2000 7100 50  0000 C CNN
+F 4 "BSS138" H 0   0   50  0001 C CNN "PartNumber"
+F 5 "ON Semiconductor / Fairchild" H 0   0   50  0001 C CNN "Manufacturer"
+	1    2000 7100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 7100 2200 7000
+Wire Wire Line
+	2200 7000 2400 7000
+Wire Wire Line
+	2400 7000 2400 7100
+Wire Wire Line
+	2400 7300 2400 7400
+Connection ~ 2400 7400
+Wire Wire Line
+	2400 7400 2500 7400
+Wire Wire Line
+	2400 7000 2600 7000
+Wire Wire Line
+	2600 7000 2600 7200
+Wire Wire Line
+	2600 7200 2700 7200
+Connection ~ 2400 7000
+Wire Wire Line
+	4500 4000 4300 4000
+Wire Wire Line
+	4500 3800 4300 3800
+Wire Wire Line
+	4500 3600 4300 3600
+Wire Wire Line
+	4300 3400 4500 3400
+Wire Wire Line
+	4500 3200 4300 3200
+Wire Wire Line
+	4500 3000 4300 3000
+Wire Wire Line
+	4500 2900 4300 2900
+Wire Wire Line
+	4500 2800 4300 2800
+Wire Wire Line
+	4500 2700 4300 2700
+Wire Wire Line
+	4500 2600 4300 2600
+Wire Wire Line
+	4500 2500 4300 2500
+Text Label 4300 4000 0    50   ~ 0
+CB1
+Text Label 4300 3800 0    50   ~ 0
+CB2
+Text Label 4300 3600 0    50   ~ 0
+CB3
+Text Label 4300 3400 0    50   ~ 0
+CB4
+Text Label 4300 3200 0    50   ~ 0
+CB5
+Text Label 4300 3000 0    50   ~ 0
+CB6
+Text Label 4300 2900 0    50   ~ 0
+VC6
+Text Label 4300 2800 0    50   ~ 0
+CB7
+Text Label 4300 2700 0    50   ~ 0
+VC7
+Text Label 4300 2600 0    50   ~ 0
+CB8
+Text Label 4300 2500 0    50   ~ 0
+VC8
+Wire Wire Line
+	5600 1800 5600 1900
+Wire Wire Line
+	5400 1800 5400 1900
+Wire Wire Line
+	5300 1800 5300 1900
+Wire Wire Line
+	5100 1800 5100 1900
+Wire Wire Line
+	5200 1800 5200 1900
+$Comp
+L Project:C C?
+U 1 1 5CCA8841
+P 5800 1400
+AR Path="/58ACC63A/5CCA8841" Ref="C?"  Part="1" 
+AR Path="/5C64ED50/5CCA8841" Ref="C41"  Part="1" 
+F 0 "C41" H 5825 1475 50  0000 L CNN
+F 1 "4.7n" H 5825 1325 50  0000 L CNN
+F 2 "LibreSolar:C_0603_1608" H 5800 1200 50  0001 C CNN
+F 3 "" H 5825 1475 50  0000 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0603KRX7R9BB472" H 0   0   50  0001 C CNN "PartNumber"
+	1    5800 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 1300 5800 1200
+Wire Wire Line
+	5800 1200 5700 1200
+Wire Wire Line
+	5700 1200 5700 1900
+Wire Wire Line
+	5800 1500 5800 1900
+$Comp
+L Project:C C?
+U 1 1 5CCBB832
+P 6100 1400
+AR Path="/58ACC63A/5CCBB832" Ref="C?"  Part="1" 
+AR Path="/5C64ED50/5CCBB832" Ref="C42"  Part="1" 
+F 0 "C42" H 6125 1475 50  0000 L CNN
+F 1 "4.7n" H 6125 1325 50  0000 L CNN
+F 2 "LibreSolar:C_0603_1608" H 6100 1200 50  0001 C CNN
+F 3 "" H 6125 1475 50  0000 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0603KRX7R9BB472" H 0   0   50  0001 C CNN "PartNumber"
+	1    6100 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 1500 6100 1600
+Wire Wire Line
+	6100 1600 5900 1600
+Wire Wire Line
+	5900 1600 5900 1900
+Wire Wire Line
+	6100 1300 6100 1100
+Wire Wire Line
+	6100 1100 5500 1100
+Wire Wire Line
+	5500 1100 5500 1400
+Wire Wire Line
+	2700 5000 3000 5000
+Wire Wire Line
+	3000 5000 3300 5000
+Connection ~ 3000 5000
+Wire Wire Line
+	3000 5900 3000 5800
+Connection ~ 3000 5800
+Wire Wire Line
+	3000 5800 3300 5800
+Wire Wire Line
+	3000 6700 3000 6600
+Connection ~ 3000 6600
+Wire Wire Line
+	3000 6600 3300 6600
+Wire Wire Line
+	5100 6200 5300 6200
+Wire Wire Line
+	5500 6200 5700 6200
+Wire Wire Line
+	5700 6100 5700 6200
+Connection ~ 5700 6200
+Wire Wire Line
+	5100 6100 5100 6200
+Connection ~ 5100 6200
+$Comp
+L power:GND #PWR?
+U 1 1 5CD60BDF
+P 5400 4900
+AR Path="/58ACC63A/5CD60BDF" Ref="#PWR?"  Part="1" 
+AR Path="/5C64ED50/5CD60BDF" Ref="#PWR0102"  Part="1" 
+F 0 "#PWR0102" H 5400 4650 50  0001 C CNN
+F 1 "GND" H 5400 4750 50  0000 C CNN
+F 2 "" H 5400 4900 50  0000 C CNN
+F 3 "" H 5400 4900 50  0000 C CNN
+	1    5400 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 4700 5400 4800
+Wire Wire Line
+	5400 4800 5500 4800
+Wire Wire Line
+	5500 4800 5500 4700
+Connection ~ 5400 4800
+Wire Wire Line
+	5400 4800 5400 4900
+Wire Wire Line
+	5500 4800 5600 4800
+Wire Wire Line
+	5600 4800 5600 4700
+Connection ~ 5500 4800
+Wire Wire Line
+	5600 4800 5700 4800
+Wire Wire Line
+	5700 4800 5700 4700
+Connection ~ 5600 4800
+Wire Wire Line
+	6500 3300 6600 3300
+Wire Wire Line
+	6600 3300 6600 3400
+Wire Wire Line
+	6600 3400 6500 3400
+$Comp
+L Project:R R?
+U 1 1 5CE9FF29
+P 7700 2900
+AR Path="/58ACC63A/5CE9FF29" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5CE9FF29" Ref="R39"  Part="1" 
+F 0 "R39" V 7630 2900 50  0000 C CNN
+F 1 "2.2k" V 7770 2900 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" H 7700 2900 50  0001 C CNN
+F 3 "" H 7700 2900 50  0000 C CNN
+F 4 "Yageo" H 2900 -2450 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-072K2L" H 2900 -2450 50  0001 C CNN "PartNumber"
+	1    7700 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CEA0245
+P 7700 3100
+AR Path="/58ACC63A/5CEA0245" Ref="#PWR?"  Part="1" 
+AR Path="/5C64ED50/5CEA0245" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0107" H 7700 2850 50  0001 C CNN
+F 1 "GND" H 7700 2950 50  0000 C CNN
+F 2 "" H 7700 3100 50  0000 C CNN
+F 3 "" H 7700 3100 50  0000 C CNN
+	1    7700 3100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6500 3200
+NoConn ~ 6500 2800
+NoConn ~ 6500 2600
+$Comp
+L Project:C C?
+U 1 1 5CEDC4EA
+P 7200 3100
+AR Path="/58ACC63A/5CEDC4EA" Ref="C?"  Part="1" 
+AR Path="/5C64ED50/5CEDC4EA" Ref="C38"  Part="1" 
+F 0 "C38" H 7225 3175 50  0000 L CNN
+F 1 "100n" H 7225 3025 50  0000 L CNN
+F 2 "LibreSolar:C_0603_1608" H 7200 2900 50  0001 C CNN
+F 3 "" H 7225 3175 50  0000 C CNN
+F 4 "Yageo" H 1000 -2350 60  0001 C CNN "Manufacturer"
+F 5 "CC0603KRX7R9BB104" H 1000 -2350 60  0001 C CNN "PartNumber"
+	1    7200 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CEFA020
+P 7200 3300
+AR Path="/58ACC63A/5CEFA020" Ref="#PWR?"  Part="1" 
+AR Path="/5C64ED50/5CEFA020" Ref="#PWR0108"  Part="1" 
+F 0 "#PWR0108" H 7200 3050 50  0001 C CNN
+F 1 "GND" H 7200 3150 50  0000 C CNN
+F 2 "" H 7200 3300 50  0000 C CNN
+F 3 "" H 7200 3300 50  0000 C CNN
+	1    7200 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 2900 7200 2900
+Wire Wire Line
+	7200 2900 7200 3000
+Wire Wire Line
+	7700 2700 7700 2800
+Wire Wire Line
+	6500 2700 7700 2700
+Wire Wire Line
+	7700 3000 7700 3100
+$Comp
+L Project:R_NTC RT?
+U 1 1 5CF399DD
+P 8800 5700
+AR Path="/5CC2B452/5CF399DD" Ref="RT?"  Part="1" 
+AR Path="/5C64ED50/5CF399DD" Ref="RT2"  Part="1" 
+F 0 "RT2" V 8650 5700 50  0000 C CNN
+F 1 "10k" V 8900 5700 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" H 8800 5750 50  0001 C CNN
+F 3 "" H 8800 5750 50  0001 C CNN
+F 4 "TDK" H 8800 5700 60  0001 C CNN "Manufacturer"
+F 5 "NTCG163JF103FT1S" H 8800 5700 60  0001 C CNN "PartNumber"
+	1    8800 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Project:R R?
+U 1 1 5CF442F6
+P 8400 5300
+AR Path="/58ACC63A/5CF442F6" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5CF442F6" Ref="R40"  Part="1" 
+F 0 "R40" V 8330 5300 50  0000 C CNN
+F 1 "22k" V 8470 5300 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" H 8400 5300 50  0001 C CNN
+F 3 "" H 8400 5300 50  0000 C CNN
+F 4 "Yageo" H 3600 -50 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0722KL" H 3600 -50 50  0001 C CNN "PartNumber"
+	1    8400 5300
+	1    0    0    1   
+$EndComp
+$Comp
+L Project:R R?
+U 1 1 5CF44543
+P 9400 5300
+AR Path="/58ACC63A/5CF44543" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5CF44543" Ref="R29"  Part="1" 
+F 0 "R29" V 9330 5300 50  0000 C CNN
+F 1 "22k" V 9470 5300 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" H 9400 5300 50  0001 C CNN
+F 3 "" H 9400 5300 50  0000 C CNN
+F 4 "Yageo" H 4600 -50 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0722KL" H 4600 -50 50  0001 C CNN "PartNumber"
+	1    9400 5300
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8400 4900 8400 5200
+Wire Wire Line
+	9400 4900 9400 5200
+$Comp
+L Project:R R?
+U 1 1 5CF59AFC
+P 8400 5700
+AR Path="/58ACC63A/5CF59AFC" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5CF59AFC" Ref="R26"  Part="1" 
+F 0 "R26" V 8330 5700 50  0000 C CNN
+F 1 "10k" V 8470 5700 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" H 8400 5700 50  0001 C CNN
+F 3 "" H 8400 5700 50  0000 C CNN
+F 4 "Yageo" H 3600 350 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" H 3600 350 50  0001 C CNN "PartNumber"
+	1    8400 5700
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CF648B8
+P 8400 6000
+AR Path="/58ACC63A/5CF648B8" Ref="#PWR?"  Part="1" 
+AR Path="/5C64ED50/5CF648B8" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H 8400 5750 50  0001 C CNN
+F 1 "GND" H 8400 5850 50  0000 C CNN
+F 2 "" H 8400 6000 50  0000 C CNN
+F 3 "" H 8400 6000 50  0000 C CNN
+	1    8400 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CF64945
+P 9400 6000
+AR Path="/58ACC63A/5CF64945" Ref="#PWR?"  Part="1" 
+AR Path="/5C64ED50/5CF64945" Ref="#PWR0110"  Part="1" 
+F 0 "#PWR0110" H 9400 5750 50  0001 C CNN
+F 1 "GND" H 9400 5850 50  0000 C CNN
+F 2 "" H 9400 6000 50  0000 C CNN
+F 3 "" H 9400 6000 50  0000 C CNN
+	1    9400 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Project:R R?
+U 1 1 5CF64AB1
+P 9400 5700
+AR Path="/58ACC63A/5CF64AB1" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5CF64AB1" Ref="R30"  Part="1" 
+F 0 "R30" V 9330 5700 50  0000 C CNN
+F 1 "10k" V 9470 5700 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" H 9400 5700 50  0001 C CNN
+F 3 "" H 9400 5700 50  0000 C CNN
+F 4 "Yageo" H 4600 350 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" H 4600 350 50  0001 C CNN "PartNumber"
+	1    9400 5700
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9400 5500 9500 5500
+Wire Wire Line
+	9400 5400 9400 5500
+Connection ~ 9400 5500
+Wire Wire Line
+	9400 5500 9400 5600
+Wire Wire Line
+	9400 5800 9400 6000
+Wire Wire Line
+	8400 5400 8400 5500
+Wire Wire Line
+	8400 5600 8400 5500
+Connection ~ 8400 5500
+Wire Wire Line
+	8400 5800 8400 5900
+$Comp
+L Project:C C?
+U 1 1 5D03DAC7
+P 6800 4400
+AR Path="/58ACC63A/5D03DAC7" Ref="C?"  Part="1" 
+AR Path="/5C64ED50/5D03DAC7" Ref="C39"  Part="1" 
+F 0 "C39" H 6825 4475 50  0000 L CNN
+F 1 "100n" H 6825 4325 50  0000 L CNN
+F 2 "LibreSolar:C_0603_1608" H 6800 4200 50  0001 C CNN
+F 3 "" H 6825 4475 50  0000 C CNN
+F 4 "Yageo" H 600 -1050 60  0001 C CNN "Manufacturer"
+F 5 "CC0603KRX7R9BB104" H 600 -1050 60  0001 C CNN "PartNumber"
+	1    6800 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D03DB7F
+P 6800 4700
+AR Path="/58ACC63A/5D03DB7F" Ref="#PWR?"  Part="1" 
+AR Path="/5C64ED50/5D03DB7F" Ref="#PWR0111"  Part="1" 
+F 0 "#PWR0111" H 6800 4450 50  0001 C CNN
+F 1 "GND" H 6800 4550 50  0000 C CNN
+F 2 "" H 6800 4700 50  0000 C CNN
+F 3 "" H 6800 4700 50  0000 C CNN
+	1    6800 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 4100 6800 4100
+Wire Wire Line
+	6800 4100 6800 4300
+Wire Wire Line
+	6800 4500 6800 4700
+$Comp
+L power:GND #PWR?
+U 1 1 5D061B85
+P 6600 4700
+AR Path="/58ACC63A/5D061B85" Ref="#PWR?"  Part="1" 
+AR Path="/5C64ED50/5D061B85" Ref="#PWR0112"  Part="1" 
+F 0 "#PWR0112" H 6600 4450 50  0001 C CNN
+F 1 "GND" H 6600 4550 50  0000 C CNN
+F 2 "" H 6600 4700 50  0000 C CNN
+F 3 "" H 6600 4700 50  0000 C CNN
+	1    6600 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 4200 6600 4200
+Wire Wire Line
+	6600 4200 6600 4700
+$Comp
+L Project:C C?
+U 1 1 5D0AB349
+P 3900 2500
+AR Path="/58ACC63A/5D0AB349" Ref="C?"  Part="1" 
+AR Path="/5C64ED50/5D0AB349" Ref="C30"  Part="1" 
+F 0 "C30" H 3925 2575 50  0000 L CNN
+F 1 "47n" H 3925 2425 50  0000 L CNN
+F 2 "LibreSolar:C_0603_1608" H 3900 2300 50  0001 C CNN
+F 3 "" H 3925 2575 50  0000 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0603KRX7R9BB473" H 0   0   50  0001 C CNN "PartNumber"
+	1    3900 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 2300 4200 2300
+Wire Wire Line
+	3900 2300 3900 2400
+$Comp
+L power:GND #PWR?
+U 1 1 5D0B7BAD
+P 3900 2700
+AR Path="/58ACC63A/5D0B7BAD" Ref="#PWR?"  Part="1" 
+AR Path="/5C64ED50/5D0B7BAD" Ref="#PWR0113"  Part="1" 
+F 0 "#PWR0113" H 3900 2450 50  0001 C CNN
+F 1 "GND" H 3900 2550 50  0000 C CNN
+F 2 "" H 3900 2700 50  0000 C CNN
+F 3 "" H 3900 2700 50  0000 C CNN
+	1    3900 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 2600 3900 2700
+Wire Wire Line
+	3900 2200 3900 2300
+Connection ~ 3900 2300
+$Comp
+L Project:R R?
+U 1 1 5D0DDA78
+P 3900 2100
+AR Path="/58ACC63A/5D0DDA78" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5D0DDA78" Ref="R37"  Part="1" 
+F 0 "R37" V 3830 2100 50  0000 C CNN
+F 1 "100" V 3970 2100 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" H 3900 2100 50  0001 C CNN
+F 3 "" H 3900 2100 50  0000 C CNN
+F 4 "Yageo" H -900 -3250 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-07100RL" H -900 -3250 50  0001 C CNN "PartNumber"
+	1    3900 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 1800 3900 2000
+Wire Wire Line
+	6000 1900 6000 1800
+Wire Wire Line
+	6000 1800 6100 1800
+Wire Wire Line
+	6100 1800 6100 1900
+$Comp
+L Project:R R?
+U 1 1 5D10484E
+P 6700 1800
+AR Path="/58ACC63A/5D10484E" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5D10484E" Ref="R38"  Part="1" 
+F 0 "R38" V 6630 1800 50  0000 C CNN
+F 1 "1k" V 6770 1800 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" H 6700 1800 50  0001 C CNN
+F 3 "" H 6700 1800 50  0000 C CNN
+F 4 "Yageo" H 1900 -3550 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071KL" H 1900 -3550 50  0001 C CNN "PartNumber"
+	1    6700 1800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6100 1800 6600 1800
+Connection ~ 6100 1800
+Wire Wire Line
+	6800 1800 6900 1800
+Wire Wire Line
+	6900 1800 6900 1700
+$Comp
+L Project:D_Schottky D2
+U 1 1 5D1202B5
+P 4400 1400
+F 0 "D2" H 4400 1184 50  0000 C CNN
+F 1 "PMEG6002" H 4400 1275 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-523" H 4400 1276 50  0001 C CNN
+F 3 "" V 4400 1400 50  0000 C CNN
+F 4 "Nexperia" H 4400 1400 50  0001 C CNN "Manufacturer"
+F 5 "PMEG6002EBF" H 4400 1400 50  0001 C CNN "PartNumber"
+	1    4400 1400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Project:D_Schottky D5
+U 1 1 5D120565
+P 5100 1100
+F 0 "D5" H 5100 884 50  0000 C CNN
+F 1 "PMEG6002" H 5100 975 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-523" V 5100 1100 50  0001 C CNN
+F 3 "" V 5100 1100 50  0000 C CNN
+F 4 "Nexperia" H 5100 1100 50  0001 C CNN "Manufacturer"
+F 5 "PMEG6002EBF" H 5100 1100 50  0001 C CNN "PartNumber"
+	1    5100 1100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4300 1400 4200 1400
+Wire Wire Line
+	4200 1400 4200 2300
+Connection ~ 4200 2300
+Wire Wire Line
+	4200 2300 3900 2300
+Wire Wire Line
+	4500 1400 5500 1400
+Connection ~ 5500 1400
+Wire Wire Line
+	5500 1400 5500 1900
+Wire Wire Line
+	5200 1100 5500 1100
+Connection ~ 5500 1100
+Wire Wire Line
+	5000 1100 4900 1100
+Text Notes 8100 4700 0    100  ~ 0
+Temperature sensors
+Wire Wire Line
+	6500 3700 6900 3700
+Wire Wire Line
+	6500 3900 6900 3900
+Wire Wire Line
+	6500 4000 6800 4000
+Text Label 6900 3700 2    50   ~ 0
+TEMP0
+Text Label 6800 4000 2    50   ~ 0
+XT2
+Text Label 8400 4900 3    50   ~ 0
+TEMP0
+Text Label 9400 4900 3    50   ~ 0
+TEMP0
+Wire Wire Line
+	8400 5900 8800 5900
+Wire Wire Line
+	8800 5900 8800 5800
+Wire Wire Line
+	8800 5600 8800 5500
+Wire Wire Line
+	8800 5500 8400 5500
+Wire Wire Line
+	8400 5900 8400 6000
+Connection ~ 8400 5900
+Text Label 8800 5500 2    50   ~ 0
+XT2
+Text Label 4800 1400 0    50   ~ 0
+VDD
+Text Label 6200 1800 0    50   ~ 0
+CHMON
+Text Label 10300 1800 2    50   ~ 0
+CHMON
+$Comp
+L Project:Q_PMOS_GSD Q?
+U 1 1 5C7B85B7
+P 9300 1900
+AR Path="/58ACC63A/5C7B85B7" Ref="Q?"  Part="1" 
+AR Path="/5C64ED50/5C7B85B7" Ref="Q9"  Part="1" 
+F 0 "Q9" H 9600 1950 50  0000 R CNN
+F 1 "NDS0605" H 9850 1850 50  0000 R CNN
+F 2 "LibreSolar:SOT-23" H 9500 2000 50  0001 C CNN
+F 3 "" H 9300 1900 50  0000 C CNN
+F 4 "ON Semiconductor / Fairchild" H 6900 -500 60  0001 C CNN "Manufacturer"
+F 5 "NDS0605" H 6900 -500 60  0001 C CNN "PartNumber"
+	1    9300 1900
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	9100 1800 8800 1800
+Text Label 7800 1500 0    50   ~ 0
+VDD
+$Comp
+L Project:R R?
+U 1 1 5C7E5300
+P 8600 2000
+AR Path="/58ACC63A/5C7E5300" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5C7E5300" Ref="R32"  Part="1" 
+F 0 "R32" V 8530 2000 50  0000 C CNN
+F 1 "1M" V 8670 2000 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" H 8600 2000 50  0001 C CNN
+F 3 "" H 8600 2000 50  0000 C CNN
+F 4 "Yageo" H 3800 -3350 50  0001 C CNN "Manufacturer"
+	1    8600 2000
+	1    0    0    1   
+$EndComp
+$Comp
+L Project:R R?
+U 1 1 5C7E583B
+P 9800 1800
+AR Path="/58ACC63A/5C7E583B" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5C7E583B" Ref="R36"  Part="1" 
+F 0 "R36" V 9730 1800 50  0000 C CNN
+F 1 "1k" V 9870 1800 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" H 9800 1800 50  0001 C CNN
+F 3 "" H 9800 1800 50  0000 C CNN
+F 4 "Yageo" H 5000 -3550 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071KL" H 5000 -3550 50  0001 C CNN "PartNumber"
+	1    9800 1800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9300 2200 9300 2100
+$Comp
+L Project:D_Zener D8
+U 1 1 5C82F693
+P 8800 2000
+F 0 "D8" V 8754 2079 50  0000 L CNN
+F 1 "12V" V 8845 2079 50  0000 L CNN
+F 2 "Diode_SMD:D_SOT-23_ANK" H 8800 2000 50  0001 C CNN
+F 3 "" H 8800 2000 50  0000 C CNN
+F 4 "ON Semiconductor" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "SZBZX84C12LT3G" H 0   0   50  0001 C CNN "PartNumber"
+F 6 "Alternative: Diodes Inc. BZX84C12-7-F" H 0   0   50  0001 C CNN "Remarks"
+	1    8800 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9300 2200 9300 2300
+Connection ~ 9300 2200
+Wire Wire Line
+	9500 1800 9700 1800
+$Comp
+L Project:D_Zener D9
+U 1 1 5C8AC4AE
+P 9300 3700
+F 0 "D9" V 9254 3779 50  0000 L CNN
+F 1 "12V" V 9345 3779 50  0000 L CNN
+F 2 "Diode_SMD:D_SOT-23_ANK" H 9300 3700 50  0001 C CNN
+F 3 "" H 9300 3700 50  0000 C CNN
+F 4 "ON Semiconductor" H 9300 3700 50  0001 C CNN "Manufacturer"
+F 5 "SZBZX84C12LT3G" H 9300 3700 50  0001 C CNN "PartNumber"
+F 6 "Alternative: Diodes Inc. BZX84C12-7-F" H 9300 3700 50  0001 C CNN "Remarks"
+	1    9300 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Project:R R?
+U 1 1 5C8AC658
+P 10300 3000
+AR Path="/58ACC63A/5C8AC658" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5C8AC658" Ref="R54"  Part="1" 
+F 0 "R54" V 10230 3000 50  0000 C CNN
+F 1 "1k" V 10370 3000 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" H 10300 3000 50  0001 C CNN
+F 3 "" H 10300 3000 50  0000 C CNN
+F 4 "Yageo" H 5500 -2350 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071KL" H 5500 -2350 50  0001 C CNN "PartNumber"
+	1    10300 3000
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C8CC1D9
+P 9300 3900
+AR Path="/58ACC63A/5C8CC1D9" Ref="#PWR?"  Part="1" 
+AR Path="/5C64ED50/5C8CC1D9" Ref="#PWR0131"  Part="1" 
+F 0 "#PWR0131" H 9300 3650 50  0001 C CNN
+F 1 "GND" H 9300 3750 50  0000 C CNN
+F 2 "" H 9300 3900 50  0000 C CNN
+F 3 "" H 9300 3900 50  0000 C CNN
+	1    9300 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Project:R R?
+U 1 1 5C8EBE3C
+P 9300 2400
+AR Path="/58ACC63A/5C8EBE3C" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5C8EBE3C" Ref="R33"  Part="1" 
+F 0 "R33" V 9230 2400 50  0000 C CNN
+F 1 "10k" V 9370 2400 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" H 9300 2400 50  0001 C CNN
+F 3 "" H 9300 2400 50  0000 C CNN
+F 4 "Yageo" H 4500 -2950 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" H 4500 -2950 50  0001 C CNN "PartNumber"
+	1    9300 2400
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9300 3400 9300 3500
+Wire Wire Line
+	9300 3600 9300 3500
+Connection ~ 9300 3500
+Wire Wire Line
+	9300 3800 9300 3900
+Wire Wire Line
+	7800 1500 8100 1500
+$Comp
+L Project:Q_NMOS_GSD Q?
+U 1 1 5C97F2AA
+P 10200 3500
+AR Path="/58ACC63A/5C97F2AA" Ref="Q?"  Part="1" 
+AR Path="/5C64ED50/5C97F2AA" Ref="Q15"  Part="1" 
+F 0 "Q15" H 10500 3550 50  0000 R CNN
+F 1 "BSS138" H 10700 3450 50  0000 R CNN
+F 2 "LibreSolar:SOT-23" H 10400 3600 50  0001 C CNN
+F 3 "" H 10200 3500 50  0000 C CNN
+F 4 "ON Semiconductor / Fairchild" H 7800 -1300 60  0001 C CNN "Manufacturer"
+F 5 "BSS138" H 7800 -1300 60  0001 C CNN "PartNumber"
+	1    10200 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5C97FF90
+P 10300 2800
+AR Path="/58ACC63A/5C97FF90" Ref="#PWR?"  Part="1" 
+AR Path="/5C64ED50/5C97FF90" Ref="#PWR0132"  Part="1" 
+F 0 "#PWR0132" H 10300 2650 50  0001 C CNN
+F 1 "+3.3V" H 10300 2940 50  0000 C CNN
+F 2 "" H 10300 2800 50  0000 C CNN
+F 3 "" H 10300 2800 50  0000 C CNN
+	1    10300 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Project:R R?
+U 1 1 5C9E2564
+P 9300 3300
+AR Path="/58ACC63A/5C9E2564" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5C9E2564" Ref="R34"  Part="1" 
+F 0 "R34" V 9230 3300 50  0000 C CNN
+F 1 "10k" V 9370 3300 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" H 9300 3300 50  0001 C CNN
+F 3 "" H 9300 3300 50  0000 C CNN
+F 4 "Yageo" H 4500 -2050 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-0710KL" H 4500 -2050 50  0001 C CNN "PartNumber"
+	1    9300 3300
+	1    0    0    1   
+$EndComp
+$Comp
+L Project:R R?
+U 1 1 5CA20FE2
+P 9900 3700
+AR Path="/58ACC63A/5CA20FE2" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5CA20FE2" Ref="R53"  Part="1" 
+F 0 "R53" V 9830 3700 50  0000 C CNN
+F 1 "1M" V 9970 3700 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" H 9900 3700 50  0001 C CNN
+F 3 "" H 9900 3700 50  0000 C CNN
+F 4 "Yageo" H 5100 -1650 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071ML" H 5100 -1650 50  0001 C CNN "PartNumber"
+	1    9900 3700
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	10300 2800 10300 2900
+Wire Wire Line
+	10300 3100 10300 3200
+Wire Wire Line
+	10400 3200 10300 3200
+Connection ~ 10300 3200
+Wire Wire Line
+	10300 3200 10300 3300
+$Comp
+L power:GND #PWR?
+U 1 1 5CA51724
+P 10300 3900
+AR Path="/58ACC63A/5CA51724" Ref="#PWR?"  Part="1" 
+AR Path="/5C64ED50/5CA51724" Ref="#PWR0133"  Part="1" 
+F 0 "#PWR0133" H 10300 3650 50  0001 C CNN
+F 1 "GND" H 10300 3750 50  0000 C CNN
+F 2 "" H 10300 3900 50  0000 C CNN
+F 3 "" H 10300 3900 50  0000 C CNN
+	1    10300 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 3700 10300 3900
+$Comp
+L power:GND #PWR?
+U 1 1 5CA61D15
+P 9900 3900
+AR Path="/58ACC63A/5CA61D15" Ref="#PWR?"  Part="1" 
+AR Path="/5C64ED50/5CA61D15" Ref="#PWR0134"  Part="1" 
+F 0 "#PWR0134" H 9900 3650 50  0001 C CNN
+F 1 "GND" H 9900 3750 50  0000 C CNN
+F 2 "" H 9900 3900 50  0000 C CNN
+F 3 "" H 9900 3900 50  0000 C CNN
+	1    9900 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 3500 9900 3500
+Wire Wire Line
+	9900 3500 9900 3600
+Connection ~ 9900 3500
+Wire Wire Line
+	9900 3500 10000 3500
+Wire Wire Line
+	9900 3800 9900 3900
+Wire Wire Line
+	8600 2100 8600 2200
+Wire Wire Line
+	8600 2200 8800 2200
+Wire Wire Line
+	8600 1900 8600 1800
+Connection ~ 8600 1800
+Wire Wire Line
+	8800 1900 8800 1800
+Connection ~ 8800 1800
+Wire Wire Line
+	8800 1800 8600 1800
+Wire Wire Line
+	8800 2100 8800 2200
+Connection ~ 8800 2200
+Wire Wire Line
+	8800 2200 9300 2200
+Wire Wire Line
+	9900 1800 10300 1800
+Wire Wire Line
+	8400 1800 8600 1800
+Text Notes 8500 1100 0    100  ~ 0
+On/off push button
+Wire Wire Line
+	7300 2900 7200 2900
+Connection ~ 7200 2900
+Text HLabel 7300 2900 2    50   Output ~ 0
+RGO
+Text HLabel 1700 1000 0    50   Input ~ 0
+CELL8+
+Text HLabel 1700 1800 0    50   Input ~ 0
+CELL7+
+Text HLabel 1700 2600 0    50   Input ~ 0
+CELL6+
+Text HLabel 1700 3400 0    50   Input ~ 0
+CELL5+
+Text HLabel 1700 4200 0    50   Input ~ 0
+CELL4+
+Text HLabel 1700 5000 0    50   Input ~ 0
+CELL3+
+Text HLabel 1700 5800 0    50   Input ~ 0
+CELL2+
+Text HLabel 1700 6600 0    50   Input ~ 0
+CELL1+
+Text HLabel 1700 7400 0    50   Input ~ 0
+CELL1-
+Text HLabel 3900 1800 1    50   Input ~ 0
+BAT+
+Text HLabel 4900 1100 0    50   Input ~ 0
+CHG+
+Text HLabel 6900 1700 1    50   Input ~ 0
+EXT+
+Text HLabel 9500 5500 2    50   Input ~ 0
+NTC_BAT
+Text HLabel 6900 3900 2    50   Input ~ 0
+NTC_BAT
+$Comp
+L Project:SW_PUSH S1
+U 1 1 5C89C57E
+P 9300 2850
+F 0 "S1" V 9300 2810 50  0000 R CNN
+F 1 "SW_PUSH" H 9300 2720 50  0001 C CNN
+F 2 "LibreSolar:SW_SPST_6mm" H 9200 2700 50  0001 C CNN
+F 3 "" H 9300 2850 50  0000 C CNN
+	1    9300 2850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9300 3000 9300 3100
+Wire Wire Line
+	9300 2500 9300 2600
+Wire Wire Line
+	9300 2600 9100 2600
+Connection ~ 9300 2600
+Wire Wire Line
+	9300 2600 9300 2700
+Wire Wire Line
+	9300 3100 9100 3100
+Connection ~ 9300 3100
+Wire Wire Line
+	9300 3100 9300 3200
+Text HLabel 9100 2600 0    50   Input ~ 0
+BTN_1
+Text HLabel 9100 3100 0    50   Input ~ 0
+BTN_2
+Text HLabel 5100 1800 1    50   Input ~ 0
+CSI1
+Text HLabel 5200 1800 1    50   Input ~ 0
+CSI2
+Text HLabel 5700 6100 1    50   Input ~ 0
+CSI2
+Text HLabel 5100 6100 1    50   Input ~ 0
+CSI1
+Text HLabel 5300 1800 1    50   Output ~ 0
+CFET
+Text HLabel 5400 1800 1    50   Output ~ 0
+PCFET
+Text HLabel 5600 1800 1    50   Output ~ 0
+DFET
+Text HLabel 10400 3200 2    50   Output ~ 0
+BTN_SIGNAL
+Text HLabel 6700 3400 2    50   BiDi ~ 0
+SDA
+Text HLabel 6700 3500 2    50   Input ~ 0
+SCL
+Wire Wire Line
+	6500 3500 6700 3500
+Wire Wire Line
+	6700 3400 6600 3400
+Connection ~ 6600 3400
+Wire Wire Line
+	6500 3100 6700 3100
+Text HLabel 6700 3100 2    50   Output ~ 0
+ALERT
+Wire Wire Line
+	7200 3300 7200 3200
+$Comp
+L Diode:BAV70 D?
+U 1 1 5CF6D4DE
+P 8400 1500
+AR Path="/58363B12/5CF6D4DE" Ref="D?"  Part="1" 
+AR Path="/5C64ED50/5CF6D4DE" Ref="D7"  Part="1" 
+F 0 "D7" H 8400 1716 50  0000 C CNN
+F 1 "BAV70" H 8400 1625 50  0000 C CNN
+F 2 "LibreSolar:SOT-23" H 8400 1500 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 8400 1500 50  0001 C CNN
+F 4 "ON Semiconductor" H 8400 1500 50  0001 C CNN "Manufacturer"
+F 5 "BAV70LT1G" H 8400 1500 50  0001 C CNN "PartNumber"
+F 6 "Alternative: Nexperia BAV70,215" H 8400 1500 50  0001 C CNN "Remarks"
+	1    8400 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 1700 8400 1800
+NoConn ~ 8700 1500
+Text Notes 6150 5150 0    50   ~ 0
+ADDR pin low =\nI2C address 50H
+Wire Wire Line
+	-1850 2750 -1850 2450
+Wire Wire Line
+	-1850 3050 -1850 3350
+Text Label -1850 2450 3    50   ~ 0
+CB5
+Text Label -1850 3350 1    50   ~ 0
+VC4
+Text Notes -2100 2350 0    50   ~ 0
+3/4/5/6/7 cells
+Wire Wire Line
+	-2100 2750 -2100 2450
+Wire Wire Line
+	-2100 3050 -2100 3350
+Text Label -2100 2450 3    50   ~ 0
+CELL5+
+Text Label -2100 3350 1    50   ~ 0
+CELL4+
+$Comp
+L Project:R R?
+U 1 1 5D4E4995
+P -1850 4100
+AR Path="/58ACC63A/5D4E4995" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5D4E4995" Ref="R77"  Part="1" 
+F 0 "R77" V -1925 4100 50  0000 C CNN
+F 1 "0R" V -1775 4100 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V -2025 4000 50  0001 C CNN
+F 3 "" H -1850 4100 50  0000 C CNN
+F 4 "Yageo" H -4950 2200 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-070RL" H -4950 2200 60  0001 C CNN "PartNumber"
+	1    -1850 4100
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	-1850 4000 -1850 3700
+Wire Wire Line
+	-1850 4200 -1850 4500
+Text Label -1850 3700 3    50   ~ 0
+CB4
+Text Label -1850 4500 1    50   ~ 0
+VC3
+$Comp
+L Project:R R?
+U 1 1 5D4E49A5
+P -2100 4100
+AR Path="/58ACC63A/5D4E49A5" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5D4E49A5" Ref="R72"  Part="1" 
+F 0 "R72" V -2175 4100 50  0000 C CNN
+F 1 "0R" V -2025 4100 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V -2275 4000 50  0001 C CNN
+F 3 "" H -2100 4100 50  0000 C CNN
+F 4 "Yageo" H -5200 2200 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-070RL" H -5200 2200 60  0001 C CNN "PartNumber"
+	1    -2100 4100
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	-2100 4000 -2100 3700
+Wire Wire Line
+	-2100 4200 -2100 4500
+Text Label -2100 3700 3    50   ~ 0
+CELL4+
+Text Label -2100 4500 1    50   ~ 0
+CELL3+
+Text Notes -2100 3600 0    50   ~ 0
+3/4/5/6 cells
+$Comp
+L Project:R R?
+U 1 1 5D57F014
+P -1850 5300
+AR Path="/58ACC63A/5D57F014" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5D57F014" Ref="R78"  Part="1" 
+F 0 "R78" V -1925 5300 50  0000 C CNN
+F 1 "0R" V -1775 5300 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V -2025 5200 50  0001 C CNN
+F 3 "" H -1850 5300 50  0000 C CNN
+F 4 "Yageo" H -4950 3400 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-070RL" H -4950 3400 60  0001 C CNN "PartNumber"
+	1    -1850 5300
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	-1850 5200 -1850 4900
+Wire Wire Line
+	-1850 5400 -1850 5700
+Text Label -1850 4900 3    50   ~ 0
+CB6
+Text Label -1850 5700 1    50   ~ 0
+VC5
+$Comp
+L Project:R R?
+U 1 1 5D57F024
+P -2100 5300
+AR Path="/58ACC63A/5D57F024" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5D57F024" Ref="R73"  Part="1" 
+F 0 "R73" V -2175 5300 50  0000 C CNN
+F 1 "0R" V -2025 5300 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V -2275 5200 50  0001 C CNN
+F 3 "" H -2100 5300 50  0000 C CNN
+F 4 "Yageo" H -5200 3400 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-070RL" H -5200 3400 60  0001 C CNN "PartNumber"
+	1    -2100 5300
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	-2100 5200 -2100 4900
+Wire Wire Line
+	-2100 5400 -2100 5700
+Text Label -2100 4900 3    50   ~ 0
+CELL6+
+Text Label -2100 5700 1    50   ~ 0
+CELL5+
+Text Notes -2100 4800 0    50   ~ 0
+3/4/5 cells
+$Comp
+L Project:R R?
+U 1 1 5D63A52C
+P -1600 5300
+AR Path="/58ACC63A/5D63A52C" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5D63A52C" Ref="R81"  Part="1" 
+F 0 "R81" V -1675 5300 50  0000 C CNN
+F 1 "0R" V -1525 5300 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V -1775 5200 50  0001 C CNN
+F 3 "" H -1600 5300 50  0000 C CNN
+F 4 "Yageo" H -4700 3400 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-070RL" H -4700 3400 60  0001 C CNN "PartNumber"
+	1    -1600 5300
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	-1600 5200 -1600 4900
+Wire Wire Line
+	-1600 5400 -1600 5700
+Text Label -1600 4900 3    50   ~ 0
+VC5
+Text Label -1600 5700 1    50   ~ 0
+CB5
+$Comp
+L Project:R R?
+U 1 1 5D659AC1
+P -1850 6500
+AR Path="/58ACC63A/5D659AC1" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5D659AC1" Ref="R79"  Part="1" 
+F 0 "R79" V -1925 6500 50  0000 C CNN
+F 1 "0R" V -1775 6500 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V -2025 6400 50  0001 C CNN
+F 3 "" H -1850 6500 50  0000 C CNN
+F 4 "Yageo" H -4950 4600 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-070RL" H -4950 4600 60  0001 C CNN "PartNumber"
+	1    -1850 6500
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	-1850 6400 -1850 6100
+Wire Wire Line
+	-1850 6600 -1850 6900
+Text Label -1850 6100 3    50   ~ 0
+CB3
+Text Label -1850 6900 1    50   ~ 0
+VC2
+$Comp
+L Project:R R?
+U 1 1 5D659ACD
+P -2100 6500
+AR Path="/58ACC63A/5D659ACD" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5D659ACD" Ref="R74"  Part="1" 
+F 0 "R74" V -2175 6500 50  0000 C CNN
+F 1 "0R" V -2025 6500 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V -2275 6400 50  0001 C CNN
+F 3 "" H -2100 6500 50  0000 C CNN
+F 4 "Yageo" H -5200 4600 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-070RL" H -5200 4600 60  0001 C CNN "PartNumber"
+	1    -2100 6500
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	-2100 6400 -2100 6100
+Wire Wire Line
+	-2100 6600 -2100 6900
+Text Label -2100 6100 3    50   ~ 0
+CELL3+
+Text Label -2100 6900 1    50   ~ 0
+CELL2+
+Text Notes -2100 6000 0    50   ~ 0
+3/4 cells
+$Comp
+L Project:R R?
+U 1 1 5D659ADA
+P -1600 6500
+AR Path="/58ACC63A/5D659ADA" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5D659ADA" Ref="R82"  Part="1" 
+F 0 "R82" V -1675 6500 50  0000 C CNN
+F 1 "0R" V -1525 6500 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V -1775 6400 50  0001 C CNN
+F 3 "" H -1600 6500 50  0000 C CNN
+F 4 "Yageo" H -4700 4600 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-070RL" H -4700 4600 60  0001 C CNN "PartNumber"
+	1    -1600 6500
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	-1600 6400 -1600 6100
+Wire Wire Line
+	-1600 6600 -1600 6900
+Text Label -1600 6100 3    50   ~ 0
+VC4
+Text Label -1600 6900 1    50   ~ 0
+CB4
+$Comp
+L Project:R R?
+U 1 1 5D678D2F
+P -1850 7600
+AR Path="/58ACC63A/5D678D2F" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5D678D2F" Ref="R80"  Part="1" 
+F 0 "R80" V -1925 7600 50  0000 C CNN
+F 1 "0R" V -1775 7600 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V -2025 7500 50  0001 C CNN
+F 3 "" H -1850 7600 50  0000 C CNN
+F 4 "Yageo" H -4950 5700 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-070RL" H -4950 5700 60  0001 C CNN "PartNumber"
+	1    -1850 7600
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	-1850 7500 -1850 7200
+Wire Wire Line
+	-1850 7700 -1850 8000
+Text Label -1850 7200 3    50   ~ 0
+CB7
+Text Label -1850 8000 1    50   ~ 0
+VC6
+$Comp
+L Project:R R?
+U 1 1 5D678D3F
+P -2100 7600
+AR Path="/58ACC63A/5D678D3F" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5D678D3F" Ref="R75"  Part="1" 
+F 0 "R75" V -2175 7600 50  0000 C CNN
+F 1 "0R" V -2025 7600 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V -2275 7500 50  0001 C CNN
+F 3 "" H -2100 7600 50  0000 C CNN
+F 4 "Yageo" H -5200 5700 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-070RL" H -5200 5700 60  0001 C CNN "PartNumber"
+	1    -2100 7600
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	-2100 7500 -2100 7200
+Wire Wire Line
+	-2100 7700 -2100 8000
+Text Label -2100 7200 3    50   ~ 0
+CELL7+
+Text Label -2100 8000 1    50   ~ 0
+CELL6+
+Text Notes -2100 7100 0    50   ~ 0
+3 cells
+$Comp
+L Project:R R?
+U 1 1 5D678D50
+P -1600 7600
+AR Path="/58ACC63A/5D678D50" Ref="R?"  Part="1" 
+AR Path="/5C64ED50/5D678D50" Ref="R83"  Part="1" 
+F 0 "R83" V -1675 7600 50  0000 C CNN
+F 1 "0R" V -1525 7600 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V -1775 7500 50  0001 C CNN
+F 3 "" H -1600 7600 50  0000 C CNN
+F 4 "Yageo" H -4700 5700 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-070RL" H -4700 5700 60  0001 C CNN "PartNumber"
+	1    -1600 7600
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	-1600 7500 -1600 7200
+Wire Wire Line
+	-1600 7700 -1600 8000
+Text Label -1600 7200 3    50   ~ 0
+VC6
+Text Label -1600 8000 1    50   ~ 0
+CB6
+$Comp
+L Jumper:SolderJumper_2_Open JP3
+U 1 1 5D6A1BA0
+P -2100 2900
+F 0 "JP3" V -2146 2968 50  0000 L CNN
+F 1 "7" V -2055 2968 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H -2100 2900 50  0001 C CNN
+F 3 "~" H -2100 2900 50  0001 C CNN
+	1    -2100 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP4
+U 1 1 5D6DC44E
+P -1850 2900
+F 0 "JP4" V -1896 2968 50  0000 L CNN
+F 1 "7" V -1805 2968 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H -1850 2900 50  0001 C CNN
+F 3 "~" H -1850 2900 50  0001 C CNN
+	1    -1850 2900
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
