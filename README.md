@@ -22,6 +22,14 @@ Bill of Materials: [BOM export](http://libre.solar/docs/bom) from KiCAD
 
 The firmware is developed in a separate repository [LibreSolar/bms-firmware](https://github.com/LibreSolar/bms-firmware).
 
+## Housing
+
+The PCB is designed such that a heat sink can be easily attached at the bottom. The following images show a draft idea for the housing. The files of the heat sink and the cover can be found in the `housing` folder as native FreeCAD files.
+
+![Housing top side](housing/top.png)
+
+![Housing bottom side with heat sink](housing/bottom.png)
+
 ## Important Notice
 
 The PCBs have not been tested regarding EMC and other regulations. If you reproduce the boards, you use them at your own risk and responsibility.
