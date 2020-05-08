@@ -1,13 +1,12 @@
 EESchema Schematic File Version 4
-LIBS:bms-8s50-ic-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 5
 Title "BMS 8S50 IC"
-Date "2017-05-27"
-Rev "0.1"
+Date "2020-05-08"
+Rev "0.1.1"
 Comp "Libre Solar"
 Comment1 "License: CC-BY-SA"
 Comment2 "Author: Martin Jäger"
@@ -148,11 +147,11 @@ P 6900 3400
 AR Path="/5C683890/5C685CF3" Ref="R?"  Part="1" 
 AR Path="/58363B12/5C685CF3" Ref="R28"  Part="1" 
 F 0 "R28" V 6825 3400 50  0000 C CNN
-F 1 "54.9k" V 6975 3400 50  0000 C CNN
+F 1 "50.5k" V 6975 3400 50  0000 C CNN
 F 2 "LibreSolar:R_0603_1608" V 6725 3300 50  0001 C CNN
 F 3 "" H 6900 3400 50  0000 C CNN
 F 4 "Yageo" H 1200 800 50  0001 C CNN "Manufacturer"
-F 5 "RC0603FR-0754K9L" H 1200 800 50  0001 C CNN "PartNumber"
+F 5 "RC0603FR-0750K5L" H 1200 800 50  0001 C CNN "PartNumber"
 	1    6900 3400
 	1    0    0    -1  
 $EndComp
@@ -234,11 +233,12 @@ F 6 "Alternative: Bourns SRR6045TA-470Y" H 6550 3200 50  0001 C CNN "Remarks"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LibreSolar:LMR16006 U?
+L bms-8s50-ic-rescue:LMR16006-LibreSolar U?
 U 1 1 5C685D37
 P 5400 3200
 AR Path="/5C683890/5C685D37" Ref="U?"  Part="1" 
 AR Path="/58363B12/5C685D37" Ref="U1"  Part="1" 
+AR Path="/5C685D37" Ref="U1"  Part="1" 
 F 0 "U1" H 5400 3550 50  0000 C CNN
 F 1 "TPS560430X" H 5400 2850 50  0000 C CNN
 F 2 "LibreSolar:SOT-23-6" H 5400 2750 50  0001 C CNN
@@ -434,4 +434,6 @@ Wire Wire Line
 	2800 4800 3200 4800
 Text Notes 7200 2300 0    50   ~ 0
 ToDo: Check Bourns inductor part number\n(L2) and possibly reduce footprint size
+Text Notes 6200 3700 0    50   ~ 0
+Vref = 1V
 $EndSCHEMATC

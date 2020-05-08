@@ -1,13 +1,12 @@
 EESchema Schematic File Version 4
-LIBS:bms-8s50-ic-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 5
 Title "BMS 8S50 IC"
-Date "2017-05-27"
-Rev "0.1"
+Date "2020-05-08"
+Rev "0.1.1"
 Comp "Libre Solar"
 Comment1 "License: CC-BY-SA"
 Comment2 "Author: Martin Jäger"

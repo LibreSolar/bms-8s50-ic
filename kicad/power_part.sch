@@ -1,13 +1,12 @@
 EESchema Schematic File Version 4
-LIBS:bms-8s50-ic-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 5
 Title "BMS 8S50 IC"
-Date "2019-03-04"
-Rev "0.1"
+Date "2020-05-08"
+Rev "0.1.1"
 Comp "Libre Solar"
 Comment1 "Author: Martin Jäger"
 Comment2 ""
@@ -197,7 +196,7 @@ F 5 "RC0603FR-071ML" H 1400 900 60  0001 C CNN "PartNumber"
 	1    6200 3500
 	0    1    1    0   
 $EndComp
-Text Notes 7100 1900 0    50   ~ 0
+Text Notes 7600 1900 0    50   ~ 0
 Pre-charge of the bus\nbefore switching on DSG\n\n- Maximum current:\n  60V / (330/3 Ohm) = 0.55A\n- Time constant for 1000µF\n  bus capacitance: 0.1s
 Text Notes 2300 3700 0    50   ~ 0
 Resistor with low temperature\ncoefficient and >3W thermal\nrating necessary.
@@ -616,4 +615,25 @@ Wire Wire Line
 Wire Wire Line
 	7900 4200 7900 5000
 Connection ~ 7400 5000
+$Comp
+L Project:R R70
+U 1 1 5EF7F82F
+P 7000 2100
+F 0 "R70" V 6925 2100 50  0000 C CNN
+F 1 "1M" V 7075 2100 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V 6825 2000 50  0001 C CNN
+F 3 "" H 7000 2100 50  0000 C CNN
+F 4 "Yageo" H 2200 -500 60  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071ML" H 2200 -500 60  0001 C CNN "PartNumber"
+	1    7000 2100
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7000 2000 7000 1900
+Wire Wire Line
+	7000 1900 6600 1900
+Connection ~ 6600 1900
+Wire Wire Line
+	7000 2200 7000 2300
+Connection ~ 7000 2300
 $EndSCHEMATC

@@ -1,6 +1,6 @@
 # BMS 8S50 IC
 
-![Development Stage](https://img.shields.io/badge/development%20stage-alpha-red.svg) Very early development stage, major issues expected.
+![Development Stage](https://img.shields.io/badge/development%20stage-beta-orange.svg) First boards tested, some issues might still be open.
 
 Schematic: [PDF file](bms-8s50-ic.pdf) in repository
 

@@ -3,23 +3,26 @@
 # Temporary files
 *.000
 *.bak
+*-bak
 *.bck
-*.kicad_pcb-bak
 *~
 _autosave-*
 *.tmp
+fp-info-cache
 
 # Netlist files (exported from Eeschema)
 *.net
 
 # Autorouter files (exported from Pcbnew)
-.dsn
+*.dsn
+*.ses
 
 # Exported BOM files
 *.xml
+*.csv
+*.ods
+*.xlsx
 
-# Misc
-.atom*
-
-# Gerber files
-*gerber*
+# Exported CAD files
+*.step
+*.stp
