@@ -233,7 +233,7 @@ F 6 "Alternative: Bourns SRR6045TA-470Y" H 6550 3200 50  0001 C CNN "Remarks"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L bms-8s50-ic-rescue:LMR16006-LibreSolar U?
+L LibreSolar:LMR16006 U?
 U 1 1 5C685D37
 P 5400 3200
 AR Path="/5C683890/5C685D37" Ref="U?"  Part="1" 
