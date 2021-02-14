@@ -5,12 +5,12 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 5
 Title "BMS 8S50 IC"
-Date "2020-05-08"
-Rev "0.1.1"
-Comp "Libre Solar"
-Comment1 ""
-Comment2 ""
-Comment3 ""
+Date "2021-02-13"
+Rev "0.2"
+Comp "Libre Solar Technologies GmbH"
+Comment1 "Website: https://libre.solar"
+Comment2 "Author: Martin Jäger"
+Comment3 "License: Creative Commons Attribution-ShareAlike 4.0 International"
 Comment4 ""
 $EndDescr
 $Comp
@@ -1377,7 +1377,7 @@ Wire Wire Line
 Wire Wire Line
 	6100 1300 6100 1100
 Wire Wire Line
-	6100 1100 5500 1100
+	6100 1100 5800 1100
 Wire Wire Line
 	5500 1100 5500 1400
 Wire Wire Line
@@ -2305,4 +2305,20 @@ Wire Wire Line
 Connection ~ 4800 1400
 Wire Wire Line
 	4800 1400 5500 1400
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 6053486C
+P 5800 1000
+F 0 "#FLG0102" H 5800 1075 50  0001 C CNN
+F 1 "PWR_FLAG" H 5800 1173 50  0000 C CNN
+F 2 "" H 5800 1000 50  0001 C CNN
+F 3 "~" H 5800 1000 50  0001 C CNN
+	1    5800 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 1100 5800 1000
+Connection ~ 5800 1100
+Wire Wire Line
+	5800 1100 5500 1100
 $EndSCHEMATC

@@ -2,20 +2,20 @@
 
 ![Development Stage](https://img.shields.io/badge/development%20stage-beta-orange.svg) First boards tested, some issues might still be open.
 
-Schematic: [PDF file](bms-8s50-ic.pdf) in repository
+![BMS 8S50 IC](build/bms-8s50-ic.jpg)
 
-Gerber files: [PCB ordering](http://libre.solar/docs/pcb_ordering) documentation
+Schematic: [PDF file](https://github.com/LibreSolar/bms-8s50-ic/raw/master/build/bms-8s50-ic_schematic.pdf)
 
-Bill of Materials: [BOM export](http://libre.solar/docs/bom) from KiCAD
+Bill of Materials: [CSV file](build/bms-8s50-ic_bom.csv) or [interactive HTML BOM](https://libre.solar/bms-8s50-ic/build/bms-8s50-ic_ibom.html)
 
-![BMS 8S50 IC](bms-8s50-ic.jpg)
+Firmware repository: [LibreSolar/bms-firmware](https://github.com/LibreSolar/bms-firmware)
 
 ## Features:
 
 - 3 to 8 Li-ion cells (e.g. LiFePO4)
 - Integrated high-side MOSFET switch and current sensor
 - Balancing current approx. 150 mA
-- STM32F072 or STM32L452 ARM Cortex microcontroller
+- STM32L452 ARM Cortex-M4 microcontroller
 - Built-in CAN communication interface and UEXT extension connector
 
 ## Firmware

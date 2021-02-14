@@ -5,12 +5,12 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 5
 Title "BMS 8S50 IC"
-Date "2020-05-08"
-Rev "0.1.1"
-Comp "Libre Solar"
-Comment1 "License: CC-BY-SA"
+Date "2021-02-13"
+Rev "0.2"
+Comp "Libre Solar Technologies GmbH"
+Comment1 "Website: https://libre.solar"
 Comment2 "Author: Martin Jäger"
-Comment3 ""
+Comment3 "License: Creative Commons Attribution-ShareAlike 4.0 International"
 Comment4 ""
 $EndDescr
 Text HLabel 2300 4400 0    50   Input ~ 0
@@ -314,7 +314,7 @@ Connection ~ 7300 3200
 Connection ~ 7700 3200
 Connection ~ 4700 3000
 Wire Wire Line
-	6900 3200 7300 3200
+	6900 3200 7100 3200
 Wire Wire Line
 	3600 3000 3800 3000
 Wire Wire Line
@@ -392,8 +392,6 @@ F 6 "Alternative: Nexperia BAV70,215" H 0   0   50  0001 C CNN "Remarks"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2500 2600 2300 2600
-Wire Wire Line
 	3200 2500 3200 2600
 Wire Wire Line
 	3200 2600 3100 2600
@@ -436,4 +434,22 @@ Text Notes 7200 2300 0    50   ~ 0
 ToDo: Check Bourns inductor part number\n(L2) and possibly reduce footprint size
 Text Notes 6200 3700 0    50   ~ 0
 Vref = 1V
+Wire Wire Line
+	2500 2600 2300 2600
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 60546ECF
+P 7100 3100
+F 0 "#FLG0103" H 7100 3175 50  0001 C CNN
+F 1 "PWR_FLAG" H 7100 3273 50  0000 C CNN
+F 2 "" H 7100 3100 50  0001 C CNN
+F 3 "~" H 7100 3100 50  0001 C CNN
+	1    7100 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 3100 7100 3200
+Connection ~ 7100 3200
+Wire Wire Line
+	7100 3200 7300 3200
 $EndSCHEMATC

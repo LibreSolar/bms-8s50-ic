@@ -5,12 +5,12 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 5
 Title "BMS 8S50 IC"
-Date "2020-05-08"
-Rev "0.1.1"
-Comp "Libre Solar"
-Comment1 "License: CC-BY-SA"
+Date "2021-02-13"
+Rev "0.2"
+Comp "Libre Solar Technologies GmbH"
+Comment1 "Website: https://libre.solar"
 Comment2 "Author: Martin Jäger"
-Comment3 ""
+Comment3 "License: Creative Commons Attribution-ShareAlike 4.0 International"
 Comment4 ""
 $EndDescr
 $Comp
@@ -60,12 +60,12 @@ $EndComp
 $Comp
 L power:GND #PWR056
 U 1 1 58A8D8AB
-P 1550 2100
-F 0 "#PWR056" H 1550 1850 50  0001 C CNN
-F 1 "GND" H 1550 1950 50  0000 C CNN
-F 2 "" H 1550 2100 50  0000 C CNN
-F 3 "" H 1550 2100 50  0000 C CNN
-	1    1550 2100
+P 1500 2200
+F 0 "#PWR056" H 1500 1950 50  0001 C CNN
+F 1 "GND" H 1500 2050 50  0000 C CNN
+F 2 "" H 1500 2200 50  0000 C CNN
+F 3 "" H 1500 2200 50  0000 C CNN
+	1    1500 2200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -148,23 +148,23 @@ $EndComp
 $Comp
 L power:+3.3V #PWR067
 U 1 1 58A94580
-P 2700 1800
-F 0 "#PWR067" H 2700 1650 50  0001 C CNN
-F 1 "+3.3V" H 2700 1940 50  0000 C CNN
-F 2 "" H 2700 1800 50  0000 C CNN
-F 3 "" H 2700 1800 50  0000 C CNN
-	1    2700 1800
+P 2700 1900
+F 0 "#PWR067" H 2700 1750 50  0001 C CNN
+F 1 "+3.3V" H 2700 2040 50  0000 C CNN
+F 2 "" H 2700 1900 50  0000 C CNN
+F 3 "" H 2700 1900 50  0000 C CNN
+	1    2700 1900
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR068
 U 1 1 58A94885
-P 1100 1600
-F 0 "#PWR068" H 1100 1450 50  0001 C CNN
-F 1 "+3.3V" H 1100 1740 50  0000 C CNN
-F 2 "" H 1100 1600 50  0000 C CNN
-F 3 "" H 1100 1600 50  0000 C CNN
-	1    1100 1600
+P 1000 1700
+F 0 "#PWR068" H 1000 1550 50  0001 C CNN
+F 1 "+3.3V" H 1000 1840 50  0000 C CNN
+F 2 "" H 1000 1700 50  0000 C CNN
+F 3 "" H 1000 1700 50  0000 C CNN
+	1    1000 1700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -209,14 +209,14 @@ $EndComp
 $Comp
 L Project:C C27
 U 1 1 58AB8FDB
-P 1550 1900
-F 0 "C27" H 1575 1975 50  0000 L CNN
-F 1 "100n" H 1575 1825 50  0000 L CNN
-F 2 "LibreSolar:C_0603_1608" H 1550 1900 50  0001 C CNN
-F 3 "" H 1550 1900 50  0000 C CNN
-F 4 "Yageo" H -650 500 50  0001 C CNN "Manufacturer"
-F 5 "CC0603KRX7R9BB104" H -650 500 50  0001 C CNN "PartNumber"
-	1    1550 1900
+P 1500 2000
+F 0 "C27" H 1525 2075 50  0000 L CNN
+F 1 "100n" H 1525 1925 50  0000 L CNN
+F 2 "LibreSolar:C_0603_1608" H 1500 2000 50  0001 C CNN
+F 3 "" H 1500 2000 50  0000 C CNN
+F 4 "Yageo" H -700 600 50  0001 C CNN "Manufacturer"
+F 5 "CC0603KRX7R9BB104" H -700 600 50  0001 C CNN "PartNumber"
+	1    1500 2000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -295,12 +295,12 @@ $EndComp
 $Comp
 L power:PWR_FLAG #FLG075
 U 1 1 58BFF095
-P 1900 1600
-F 0 "#FLG075" H 1900 1550 50  0001 C CNN
-F 1 "PWR_FLAG" H 1900 1800 50  0000 C CNN
-F 2 "" H 1900 1600 50  0000 C CNN
-F 3 "" H 1900 1600 50  0000 C CNN
-	1    1900 1600
+P 1900 1700
+F 0 "#FLG075" H 1900 1650 50  0001 C CNN
+F 1 "PWR_FLAG" H 1900 1900 50  0000 C CNN
+F 2 "" H 1900 1700 50  0000 C CNN
+F 3 "" H 1900 1700 50  0000 C CNN
+	1    1900 1700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -327,13 +327,13 @@ F 3 "" V 8400 5600 50  0000 C CNN
 $EndComp
 Text Notes 8300 4700 0    100  ~ 0
 Status LEDs
-Text Notes 2500 1200 0    100  ~ 0
-MCU STM32F072
+Text Notes 2500 1300 0    100  ~ 0
+MCU STM32L452
 Text Notes 3900 5900 0    100  ~ 0
 STM Nucleo SWD and USART
-Text Label 3600 4700 2    50   ~ 0
+Text Label 3500 4700 2    50   ~ 0
 LED1
-Text Label 3600 4800 2    50   ~ 0
+Text Label 3500 4800 2    50   ~ 0
 LED2
 Text Label 1400 4200 0    50   ~ 0
 USART1_TX
@@ -343,9 +343,9 @@ Text Label 1400 4600 0    50   ~ 0
 SWDIO
 Text Label 1400 4700 0    50   ~ 0
 SWCLK
-Text Label 3600 2400 2    50   ~ 0
+Text Label 3500 2700 2    50   ~ 0
 BOOT0
-Text Label 3600 2200 2    50   ~ 0
+Text Label 3500 2300 2    50   ~ 0
 ~RESET
 Text Label 4100 6600 0    50   ~ 0
 SWDIO
@@ -361,15 +361,15 @@ Text Label 8400 4800 3    50   ~ 0
 LED1
 Text Label 9300 4800 3    50   ~ 0
 LED2
-Text HLabel 3600 4000 2    50   BiDi ~ 0
+Text HLabel 3500 4000 2    50   BiDi ~ 0
 I2C1_SDA
-Text HLabel 3600 3900 2    50   Output ~ 0
+Text HLabel 3500 3900 2    50   Output ~ 0
 I2C1_SCL
-Text HLabel 3600 3800 2    50   Output ~ 0
+Text HLabel 3500 3800 2    50   Output ~ 0
 SPI1_MOSI
-Text HLabel 3600 3700 2    50   Input ~ 0
+Text HLabel 3500 3700 2    50   Input ~ 0
 SPI1_MISO
-Text HLabel 3600 3600 2    50   Output ~ 0
+Text HLabel 3500 3600 2    50   Output ~ 0
 SPI1_SCK
 Text HLabel 1400 3600 0    50   Input ~ 0
 USART2_RX
@@ -386,13 +386,13 @@ Wire Wire Line
 Wire Wire Line
 	6150 4600 6150 4500
 Wire Wire Line
-	3200 2400 3600 2400
+	3100 2700 3500 2700
 Wire Wire Line
-	3200 4100 3600 4100
+	3100 4100 3500 4100
 Wire Wire Line
-	3200 2900 3700 2900
+	3100 2900 3500 2900
 Wire Wire Line
-	3200 4200 3600 4200
+	3100 4200 3500 4200
 Wire Wire Line
 	5450 4900 5450 4800
 Wire Wire Line
@@ -400,31 +400,29 @@ Wire Wire Line
 Wire Wire Line
 	5800 4800 5800 4900
 Wire Wire Line
-	1550 2000 1550 2100
-Wire Wire Line
 	6150 4800 6150 4900
 Wire Wire Line
-	3200 3900 3600 3900
+	3100 3900 3500 3900
 Wire Wire Line
-	3200 4000 3600 4000
+	3100 4000 3500 4000
 Wire Wire Line
-	3200 4300 3600 4300
+	3100 4300 3500 4300
 Wire Wire Line
-	3200 4400 3600 4400
+	3100 4400 3500 4400
 Wire Wire Line
 	8400 5100 8400 4800
 Wire Wire Line
-	3200 4700 3600 4700
+	3100 4700 3500 4700
 Wire Wire Line
 	9300 5100 9300 4800
 Wire Wire Line
-	3200 4800 3600 4800
+	3100 4800 3500 4800
 Wire Wire Line
-	3200 3700 3600 3700
+	3100 3700 3500 3700
 Wire Wire Line
-	3200 3800 3600 3800
+	3100 3800 3500 3800
 Wire Wire Line
-	3200 3600 3600 3600
+	3100 3600 3500 3600
 Wire Wire Line
 	1900 4700 1400 4700
 Wire Wire Line
@@ -446,7 +444,7 @@ Wire Wire Line
 Wire Wire Line
 	1900 3800 1400 3800
 Wire Wire Line
-	3200 2200 3600 2200
+	3100 2300 3500 2300
 Wire Wire Line
 	5300 6500 5800 6500
 Wire Wire Line
@@ -456,17 +454,17 @@ Wire Wire Line
 Wire Wire Line
 	4000 6250 4000 6300
 Wire Wire Line
-	1400 1700 1550 1700
+	1300 1800 1500 1800
 Wire Wire Line
-	1550 1700 1550 1800
+	1500 1800 1500 1900
 Wire Wire Line
-	2400 1700 2400 2000
+	2400 1800 2400 2100
 Wire Wire Line
-	1100 1700 1200 1700
+	1000 1800 1100 1800
 Wire Wire Line
-	1100 1700 1100 1600
+	1000 1800 1000 1700
 Wire Wire Line
-	1900 1600 1900 1700
+	1900 1700 1900 1800
 Wire Wire Line
 	4400 6400 4100 6400
 Wire Wire Line
@@ -478,15 +476,13 @@ Wire Wire Line
 Wire Wire Line
 	4000 6500 4000 6600
 Wire Wire Line
-	3200 4500 3600 4500
-Connection ~ 1550 1700
-Connection ~ 1900 1700
+	3100 4500 3500 4500
+Connection ~ 1500 1800
+Connection ~ 1900 1800
 Wire Wire Line
 	2000 6400 1900 6400
 Wire Wire Line
 	2000 6500 1900 6500
-Text Notes 1500 7000 0    50   ~ 0
-TODO!!!\nBQ769x0 ID either 0x08 or 0x18\n24AA01 has 0b1010XXX --> OK
 Text Notes 2100 5900 0    100  ~ 0
 EEPROM
 $Comp
@@ -524,22 +520,24 @@ F 5 "CC0603KRX7R9BB104" H 0   0   60  0001 C CNN "PartNumber"
 	1    3100 6500
 	1    0    0    -1  
 $EndComp
-Text HLabel 3600 4300 2    50   Output ~ 0
+Text HLabel 3500 4300 2    50   Output ~ 0
 I2C2_SCL
-Text HLabel 3600 4400 2    50   BiDi ~ 0
+Text HLabel 3500 4400 2    50   BiDi ~ 0
 I2C2_SDA
 Text HLabel 1400 3800 0    50   Input ~ 0
 V_EXT
-Text HLabel 3600 4500 2    50   Input ~ 0
+Text HLabel 3500 4500 2    50   Input ~ 0
 ALERT_IN
 Wire Wire Line
 	1900 4100 1400 4100
 Text HLabel 1400 4100 0    50   Input ~ 0
 SW_POWER
 $Comp
-L LibreSolar:24AA01 U6
+L LibreSolar:24AAxx-OT U6
 U 1 1 59170C8C
 P 2400 6500
+AR Path="/59170C8C" Ref="U6"  Part="1" 
+AR Path="/58E2D38D/59170C8C" Ref="U6"  Part="1" 
 F 0 "U6" H 2400 6865 50  0000 C CNN
 F 1 "24AA32" H 2400 6774 50  0000 C CNN
 F 2 "LibreSolar:SOT-23-5" H -100 -300 50  0001 C CNN
@@ -575,9 +573,9 @@ I2C2_SCL
 Text HLabel 1900 6500 0    50   Input ~ 0
 I2C2_SDA
 Wire Wire Line
-	1550 1700 1900 1700
+	1500 1800 1900 1800
 Wire Wire Line
-	1900 1700 2400 1700
+	1900 1800 2400 1800
 Wire Wire Line
 	3100 6700 3100 6800
 Wire Wire Line
@@ -673,16 +671,16 @@ $EndComp
 $Comp
 L Project:R R?
 U 1 1 5CCCF22A
-P 9500 3300
+P 9600 3600
 AR Path="/58AF4F23/5CCCF22A" Ref="R?"  Part="1" 
 AR Path="/58E2D38D/5CCCF22A" Ref="R69"  Part="1" 
-F 0 "R69" V 9430 3300 50  0000 C CNN
-F 1 "120" V 9570 3300 50  0000 C CNN
-F 2 "LibreSolar:R_1206_3216" H 9500 3300 50  0001 C CNN
-F 3 "" H 9500 3300 50  0000 C CNN
-F 4 "Yageo" H 0   1500 50  0001 C CNN "Manufacturer"
-F 5 "RC1206FR-07120RL" H 0   1500 50  0001 C CNN "PartNumber"
-	1    9500 3300
+F 0 "R69" V 9530 3600 50  0000 C CNN
+F 1 "120" V 9670 3600 50  0000 C CNN
+F 2 "LibreSolar:R_1206_3216" H 9600 3600 50  0001 C CNN
+F 3 "" H 9600 3600 50  0000 C CNN
+F 4 "Yageo" H 100 1800 50  0001 C CNN "Manufacturer"
+F 5 "RC1206FR-07120RL" H 100 1800 50  0001 C CNN "PartNumber"
+	1    9600 3600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -721,19 +719,9 @@ Wire Wire Line
 	9200 3300 9300 3300
 Wire Wire Line
 	9300 3300 9300 3100
-Wire Wire Line
-	9500 3100 9500 3200
-Wire Wire Line
-	9500 3500 9500 3400
-Wire Wire Line
-	9500 3100 9700 3100
-Connection ~ 9500 3100
-Wire Wire Line
-	9500 3500 9700 3500
-Connection ~ 9500 3500
 Text HLabel 9700 3100 2    50   Output ~ 0
 CAN_H
-Text HLabel 9700 3500 2    50   Output ~ 0
+Text HLabel 9700 3800 2    50   Output ~ 0
 CAN_L
 $Comp
 L Interface_CAN_LIN:TCAN334 U?
@@ -751,10 +739,6 @@ F 5 "TCAN334DR" H 8700 3400 50  0001 C CNN "PartNumber"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9300 3100 9500 3100
-Wire Wire Line
-	9200 3500 9500 3500
-Wire Wire Line
 	8700 2900 8700 3000
 Wire Wire Line
 	8700 3800 8700 3900
@@ -764,11 +748,11 @@ Wire Wire Line
 	7800 3600 8200 3600
 Wire Wire Line
 	7800 3200 8200 3200
-Text Label 3600 4100 2    50   ~ 0
+Text Label 3500 4100 2    50   ~ 0
 CAN_RX
-Text Label 3600 4200 2    50   ~ 0
+Text Label 3500 4200 2    50   ~ 0
 CAN_TX
-Text Label 3700 2900 2    50   ~ 0
+Text Label 3500 2900 2    50   ~ 0
 CAN_STB
 Text Label 7800 3200 0    50   ~ 0
 CAN_TX
@@ -795,15 +779,15 @@ Wire Wire Line
 Wire Wire Line
 	9300 5700 9300 5900
 $Comp
-L MCU_ST_STM32F0:STM32F072CBUx U3
+L MCU_ST_STM32L4:STM32L452CCUx U3
 U 1 1 5CBD30C8
 P 2500 3500
 F 0 "U3" H 2900 5000 50  0000 C CNN
-F 1 "STM32F072CBU6" H 1900 5000 50  0000 C CNN
+F 1 "STM32L452CCU6" H 1900 4900 50  0000 C CNN
 F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 1900 2100 50  0001 R CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00090510.pdf" H 2500 3500 50  0001 C CNN
 F 4 "ST Microelectronics" H 2500 3500 50  0001 C CNN "Manufacturer"
-F 5 "STM32F072CBU6" H 2500 3500 50  0001 C CNN "PartNumber"
+F 5 "STM32L452CCU6" H 2500 3500 50  0001 C CNN "PartNumber"
 	1    2500 3500
 	-1   0    0    -1  
 $EndComp
@@ -832,142 +816,140 @@ Wire Wire Line
 	2700 5100 2700 5200
 Connection ~ 2700 5100
 Wire Wire Line
+	2700 2100 2700 2000
+Wire Wire Line
+	2600 2100 2600 2000
+Wire Wire Line
+	2600 2000 2700 2000
+Connection ~ 2700 2000
+Wire Wire Line
 	2700 2000 2700 1900
 Wire Wire Line
-	2600 2000 2600 1900
+	2500 2100 2500 2000
 Wire Wire Line
-	2600 1900 2700 1900
-Connection ~ 2700 1900
+	2500 2000 2600 2000
+Connection ~ 2600 2000
 Wire Wire Line
-	2700 1900 2700 1800
+	2300 2100 2300 2000
 Wire Wire Line
-	2500 2000 2500 1900
-Wire Wire Line
-	2500 1900 2600 1900
-Connection ~ 2600 1900
-Wire Wire Line
-	2300 2000 2300 1900
-Wire Wire Line
-	2300 1900 2500 1900
-Connection ~ 2500 1900
+	2300 2000 2500 2000
+Connection ~ 2500 2000
 $Comp
 L Project:R R?
 U 1 1 5CCCFC01
-P 1300 1700
+P 1200 1800
 AR Path="/58AF4F23/5CCCFC01" Ref="R?"  Part="1" 
 AR Path="/58E2D38D/5CCCFC01" Ref="R71"  Part="1" 
 AR Path="/5CCCFC01" Ref="R?"  Part="1" 
-F 0 "R71" V 1225 1700 50  0000 C CNN
-F 1 "100" V 1375 1700 50  0000 C CNN
-F 2 "LibreSolar:R_0603_1608" V 1125 1600 50  0001 C CNN
-F 3 "" H 1300 1700 50  0000 C CNN
-F 4 "Yageo" H -2600 -1450 50  0001 C CNN "Manufacturer"
-F 5 "RC0603FR-07100RL" H -2600 -1450 50  0001 C CNN "PartNumber"
-	1    1300 1700
+F 0 "R71" V 1125 1800 50  0000 C CNN
+F 1 "100" V 1275 1800 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" V 1025 1700 50  0001 C CNN
+F 3 "" H 1200 1800 50  0000 C CNN
+F 4 "Yageo" H -2700 -1350 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-07100RL" H -2700 -1350 50  0001 C CNN "PartNumber"
+	1    1200 1800
 	0    1    1    0   
 $EndComp
-Text Notes 2500 1300 0    50   ~ 0
-Alternative: STM32L452CxU6
+Wire Wire Line
+	4900 1700 4900 1800
 Wire Wire Line
 	5300 1700 5300 1800
 Wire Wire Line
-	5700 1700 5700 1800
-Wire Wire Line
-	5700 1200 5700 1500
-Wire Wire Line
 	5300 1200 5300 1500
-Text Label 5700 1200 3    50   ~ 0
-BOOT0
+Wire Wire Line
+	4900 1200 4900 1500
 Text Label 5300 1200 3    50   ~ 0
+BOOT0
+Text Label 4900 1200 3    50   ~ 0
 ~RESET
 $Comp
 L power:GND #PWR072
 U 1 1 58AE3CBA
-P 5700 1800
-F 0 "#PWR072" H 5700 1550 50  0001 C CNN
-F 1 "GND" H 5700 1650 50  0000 C CNN
-F 2 "" H 5700 1800 50  0000 C CNN
-F 3 "" H 5700 1800 50  0000 C CNN
-	1    5700 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Project:R R35
-U 1 1 58AE2797
-P 5700 1600
-F 0 "R35" V 5630 1600 50  0000 C CNN
-F 1 "1M" V 5770 1600 50  0000 C CNN
-F 2 "LibreSolar:R_0603_1608" H 5700 1600 50  0001 C CNN
-F 3 "" H 5700 1600 50  0000 C CNN
-F 4 "Yageo" H -3050 -475 50  0001 C CNN "Manufacturer"
-F 5 "RC0603FR-071ML" H -3050 -475 50  0001 C CNN "PartNumber"
-	1    5700 1600
-	1    0    0    1   
-$EndComp
-$Comp
-L Project:C C31
-U 1 1 58AB7F87
-P 5300 1600
-F 0 "C31" H 5320 1670 50  0000 L CNN
-F 1 "100n" H 5320 1530 50  0000 L CNN
-F 2 "LibreSolar:C_0603_1608" H 5300 1600 50  0001 C CNN
-F 3 "" H 5300 1600 50  0000 C CNN
-F 4 "Yageo" H -1950 -1300 50  0001 C CNN "Manufacturer"
-F 5 "CC0603KRX7R9BB104" H -1950 -1300 50  0001 C CNN "PartNumber"
-	1    5300 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR069
-U 1 1 58AB7879
 P 5300 1800
-F 0 "#PWR069" H 5300 1550 50  0001 C CNN
+F 0 "#PWR072" H 5300 1550 50  0001 C CNN
 F 1 "GND" H 5300 1650 50  0000 C CNN
 F 2 "" H 5300 1800 50  0000 C CNN
 F 3 "" H 5300 1800 50  0000 C CNN
 	1    5300 1800
 	1    0    0    -1  
 $EndComp
+$Comp
+L Project:R R35
+U 1 1 58AE2797
+P 5300 1600
+F 0 "R35" V 5230 1600 50  0000 C CNN
+F 1 "1M" V 5370 1600 50  0000 C CNN
+F 2 "LibreSolar:R_0603_1608" H 5300 1600 50  0001 C CNN
+F 3 "" H 5300 1600 50  0000 C CNN
+F 4 "Yageo" H -3450 -475 50  0001 C CNN "Manufacturer"
+F 5 "RC0603FR-071ML" H -3450 -475 50  0001 C CNN "PartNumber"
+	1    5300 1600
+	1    0    0    1   
+$EndComp
+$Comp
+L Project:C C31
+U 1 1 58AB7F87
+P 4900 1600
+F 0 "C31" H 4920 1670 50  0000 L CNN
+F 1 "100n" H 4920 1530 50  0000 L CNN
+F 2 "LibreSolar:C_0603_1608" H 4900 1600 50  0001 C CNN
+F 3 "" H 4900 1600 50  0000 C CNN
+F 4 "Yageo" H -2350 -1300 50  0001 C CNN "Manufacturer"
+F 5 "CC0603KRX7R9BB104" H -2350 -1300 50  0001 C CNN "PartNumber"
+	1    4900 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR069
+U 1 1 58AB7879
+P 4900 1800
+F 0 "#PWR069" H 4900 1550 50  0001 C CNN
+F 1 "GND" H 4900 1650 50  0000 C CNN
+F 2 "" H 4900 1800 50  0000 C CNN
+F 3 "" H 4900 1800 50  0000 C CNN
+	1    4900 1800
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	3200 2700 4000 2700
+	3100 2600 3900 2600
 Wire Wire Line
-	4000 2700 4000 2800
+	3900 2600 3900 2700
 Wire Wire Line
-	3200 2600 4700 2600
+	3100 2500 4600 2500
 Wire Wire Line
-	4700 2800 4700 2600
+	4600 2700 4600 2500
 Wire Wire Line
-	4600 2800 4700 2800
+	4500 2700 4600 2700
 Wire Wire Line
-	4000 2800 4200 2800
+	3900 2700 4100 2700
 $Comp
 L power:GND #PWR062
 U 1 1 58A8F584
-P 4400 3100
-F 0 "#PWR062" H 4400 2850 50  0001 C CNN
-F 1 "GND" H 4400 2950 50  0000 C CNN
-F 2 "" H 4400 3100 50  0000 C CNN
-F 3 "" H 4400 3100 50  0000 C CNN
-	1    4400 3100
+P 4300 3000
+F 0 "#PWR062" H 4300 2750 50  0001 C CNN
+F 1 "GND" H 4300 2850 50  0000 C CNN
+F 2 "" H 4300 3000 50  0000 C CNN
+F 3 "" H 4300 3000 50  0000 C CNN
+	1    4300 3000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Project:Resonator Y1
 U 1 1 58C556C6
-P 4400 2800
-F 0 "Y1" H 4200 2750 50  0000 C CNN
-F 1 "8MHz" H 4600 2750 50  0000 L CNN
-F 2 "LibreSolar:Resonator_Murata_CSTNE" H 4400 2800 50  0001 C CNN
-F 3 "" H 4400 2800 50  0000 C CNN
-F 4 "Murata" H -700 -1550 50  0001 C CNN "Manufacturer"
-F 5 "CSTNE8M00GH5C000R0" H -700 -1550 50  0001 C CNN "PartNumber"
-F 6 "0.07%" H 4700 2650 50  0000 C CNN "Remarks"
-	1    4400 2800
+P 4300 2700
+F 0 "Y1" H 4100 2650 50  0000 C CNN
+F 1 "8MHz" H 4500 2650 50  0000 L CNN
+F 2 "LibreSolar:Resonator_Murata_CSTNE" H 4300 2700 50  0001 C CNN
+F 3 "" H 4300 2700 50  0000 C CNN
+F 4 "Murata" H -800 -1650 50  0001 C CNN "Manufacturer"
+F 5 "CSTNE8M00GH5C000R0" H -800 -1650 50  0001 C CNN "PartNumber"
+F 6 "0.07%" H 4600 2550 50  0000 C CNN "Remarks"
+	1    4300 2700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4400 3000 4400 3100
-Text Notes 4600 3250 0    50   ~ 0
+	4300 2900 4300 3000
+Text Notes 4500 3150 0    50   ~ 0
 Tight tolerance\nfor CAN interface
 $Comp
 L LibreSolar:ST_Nucleo_SWD_5p SWD1
@@ -1033,18 +1015,51 @@ Wire Wire Line
 Connection ~ 6000 2900
 Wire Wire Line
 	6000 2900 6200 2900
-Text Label 3800 3500 2    50   ~ 0
+Text Label 3700 3500 2    50   ~ 0
 I2C2_PULLUP
 Wire Wire Line
-	3200 3500 3800 3500
-NoConn ~ 3200 3000
-NoConn ~ 3200 3100
-NoConn ~ 3200 3300
-NoConn ~ 3200 3400
+	3100 3500 3700 3500
+NoConn ~ 3100 3000
+NoConn ~ 3100 3100
+NoConn ~ 3100 3300
+NoConn ~ 3100 3400
 NoConn ~ 1900 3300
 NoConn ~ 1900 3400
 NoConn ~ 1900 3700
 NoConn ~ 1900 3900
 NoConn ~ 1900 4000
-NoConn ~ 3200 4600
+NoConn ~ 3100 4600
+Wire Wire Line
+	1500 2100 1500 2200
+$Comp
+L Device:Jumper_NC_Small JP3
+U 1 1 60411820
+P 9600 3300
+F 0 "JP3" V 9554 3374 50  0000 L CNN
+F 1 "Jumper_NC_Small" V 9645 3374 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9600 3300 50  0001 C CNN
+F 3 "~" H 9600 3300 50  0001 C CNN
+	1    9600 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9300 3100 9600 3100
+Wire Wire Line
+	9700 3800 9600 3800
+Wire Wire Line
+	9300 3800 9300 3500
+Wire Wire Line
+	9300 3500 9200 3500
+Wire Wire Line
+	9600 3800 9600 3700
+Connection ~ 9600 3800
+Wire Wire Line
+	9600 3800 9300 3800
+Wire Wire Line
+	9600 3400 9600 3500
+Wire Wire Line
+	9600 3200 9600 3100
+Connection ~ 9600 3100
+Wire Wire Line
+	9600 3100 9700 3100
 $EndSCHEMATC

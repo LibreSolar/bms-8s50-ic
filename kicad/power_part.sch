@@ -5,12 +5,12 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 5
 Title "BMS 8S50 IC"
-Date "2020-05-08"
-Rev "0.1.1"
-Comp "Libre Solar"
-Comment1 "Author: Martin Jäger"
-Comment2 ""
-Comment3 ""
+Date "2021-02-13"
+Rev "0.2"
+Comp "Libre Solar Technologies GmbH"
+Comment1 "Website: https://libre.solar"
+Comment2 "Author: Martin Jäger"
+Comment3 "License: Creative Commons Attribution-ShareAlike 4.0 International"
 Comment4 ""
 $EndDescr
 $Comp
@@ -70,12 +70,12 @@ L Project:R R58
 U 1 1 58F827F9
 P 2800 3200
 F 0 "R58" V 2725 3200 50  0000 C CNN
-F 1 "1m" V 2875 3200 50  0000 C CNN
+F 1 "0.5m" V 2875 3200 50  0000 C CNN
 F 2 "LibreSolar:R_Shunt_2512" V 2625 3100 50  0001 C CNN
 F 3 "" H 2800 3200 50  0000 C CNN
 F 4 "Vishay / Dale" H 2800 3200 60  0001 C CNN "Manufacturer"
-F 5 "WSLF25121L000FEA" H 2800 3200 60  0001 C CNN "PartNumber"
-F 6 "Alternative: Bourns CSS2H-2512R-1L00F" H 2800 3200 50  0001 C CNN "Remarks"
+F 5 "WSLF2512L5000FEA" H 2800 3200 60  0001 C CNN "PartNumber"
+F 6 "Alternative: Bourns CSS2H-2512R-L500F" H 2800 3200 50  0001 C CNN "Remarks"
 	1    2800 3200
 	0    1    1    0   
 $EndComp
@@ -556,11 +556,14 @@ AR Path="/58E2D38D/5CC5BC5F" Ref="R?"  Part="1"
 AR Path="/5CC5BC5F" Ref="R?"  Part="1" 
 AR Path="/5CC2B452/5CC5BC5F" Ref="R59"  Part="1" 
 F 0 "R59" V 2325 5200 50  0000 C CNN
-F 1 "100" V 2475 5200 50  0000 C CNN
+F 1 "0R" V 2475 5200 50  0000 C CNN
 F 2 "LibreSolar:R_0603_1608" V 2225 5100 50  0001 C CNN
 F 3 "" H 2400 5200 50  0000 C CNN
 F 4 "Yageo" H -1500 2050 50  0001 C CNN "Manufacturer"
-F 5 "RC0603FR-07100RL" H -1500 2050 50  0001 C CNN "PartNumber"
+F 5 "RC0603FR-070RL" H -1500 2050 50  0001 C CNN "PartNumber"
+F 6 "X" V 2400 5200 150 0000 C CNN "DNF"
+F 7 "+test" H 2400 5200 50  0001 C CNN "Config"
+F 8 "Only for testing" H 2400 5200 50  0001 C CNN "Remarks"
 	1    2400 5200
 	1    0    0    -1  
 $EndComp
@@ -636,4 +639,9 @@ Connection ~ 6600 1900
 Wire Wire Line
 	7000 2200 7000 2300
 Connection ~ 7000 2300
+Text HLabel 8300 5000 2    50   Input ~ 0
+BAT-
+Wire Wire Line
+	8300 5000 7900 5000
+Connection ~ 7900 5000
 $EndSCHEMATC

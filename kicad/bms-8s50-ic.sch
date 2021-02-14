@@ -5,21 +5,21 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 5
 Title "BMS 8S50 IC"
-Date "2020-05-08"
-Rev "0.1.1"
-Comp "Libre Solar"
-Comment1 "License: CC-BY-SA"
+Date "2021-02-13"
+Rev "0.2"
+Comp "Libre Solar Technologies GmbH"
+Comment1 "Website: https://libre.solar"
 Comment2 "Author: Martin Jäger"
-Comment3 ""
+Comment3 "License: Creative Commons Attribution-ShareAlike 4.0 International"
 Comment4 ""
 $EndDescr
 $Sheet
-S 6800 5000 900  600 
+S 6500 5000 900  600 
 U 58363B12
 F0 "Power Supply" 50
 F1 "power_supply.sch" 50
-F2 "RGO" I L 6800 5400 50 
-F3 "BAT+" I L 6800 5200 50 
+F2 "RGO" I L 6500 5400 50 
+F3 "BAT+" I L 6500 5200 50 
 $EndSheet
 $Comp
 L Project:LibreSolar_Logo LOGO2
@@ -359,58 +359,45 @@ F 5 "54602-908LF" H 875 1225 50  0001 C CNN "PartNumber"
 	1    9950 4550
 	0    1    1    0   
 $EndComp
-Text Label 9200 5900 0    50   ~ 0
-CAN_V+
 Text Label 9100 5800 0    50   ~ 0
 CAN_GND
-Text Label 9100 5400 0    50   ~ 0
-CAN_GND
-Text Label 9200 4900 0    50   ~ 0
+Text Label 8800 4600 0    50   ~ 0
 CAN_V+
 Text Label 9100 4800 0    50   ~ 0
 CAN_GND
-Text Label 9100 4400 0    50   ~ 0
+Text Label 8800 4400 0    50   ~ 0
 CAN_GND
 Wire Wire Line
-	8400 5200 9500 5200
+	8300 5200 9500 5200
 Wire Wire Line
-	8300 5300 9500 5300
+	8200 5300 9500 5300
 Wire Wire Line
-	8600 4400 8600 4800
+	8500 4400 8500 4800
 Wire Wire Line
-	8600 4400 9500 4400
+	8500 4400 9500 4400
 Wire Wire Line
-	8600 4800 9500 4800
+	8500 4800 9500 4800
 Wire Wire Line
-	8600 4800 8600 5400
+	8500 4800 8500 5400
+Connection ~ 8500 4800
 Wire Wire Line
-	8600 5400 9500 5400
-Connection ~ 8600 4800
+	8500 5400 8500 5800
 Wire Wire Line
-	8600 5400 8600 5800
-Wire Wire Line
-	8600 5800 9500 5800
-Connection ~ 8600 5400
+	8500 5800 9500 5800
+Connection ~ 8500 5400
 $Comp
 L power:GND #PWR0120
 U 1 1 5CCBF1D5
-P 8600 5900
-F 0 "#PWR0120" H 8600 5650 50  0001 C CNN
-F 1 "GND" H 8605 5727 50  0000 C CNN
-F 2 "" H 8600 5900 50  0001 C CNN
-F 3 "" H 8600 5900 50  0001 C CNN
-	1    8600 5900
+P 7800 5900
+F 0 "#PWR0120" H 7800 5650 50  0001 C CNN
+F 1 "GND" H 7805 5727 50  0000 C CNN
+F 2 "" H 7800 5900 50  0001 C CNN
+F 3 "" H 7800 5900 50  0001 C CNN
+	1    7800 5900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8600 5800 8600 5900
-Connection ~ 8600 5800
-Wire Wire Line
-	9500 4500 8700 4500
-Wire Wire Line
-	8700 4500 8700 5500
-Wire Wire Line
-	8700 5500 9500 5500
+	9500 4500 9400 4500
 $Sheet
 S 6300 2000 1400 2200
 U 58E2D38D
@@ -437,25 +424,25 @@ $EndSheet
 Wire Wire Line
 	7700 3700 8000 3700
 Wire Wire Line
-	8400 4200 9500 4200
+	8300 4200 9500 4200
 Wire Wire Line
 	7700 3800 7900 3800
 Wire Wire Line
-	8300 4300 9500 4300
+	8200 4300 9500 4300
 Wire Wire Line
-	8400 4200 8400 5200
+	8300 4200 8300 5200
 Wire Wire Line
-	8300 4300 8300 5300
+	8200 4300 8200 5300
 Wire Wire Line
 	8000 3700 8000 4200
 Wire Wire Line
-	8000 4200 8400 4200
-Connection ~ 8400 4200
+	8000 4200 8300 4200
+Connection ~ 8300 4200
 Wire Wire Line
-	8300 4300 7900 4300
+	8200 4300 7900 4300
 Wire Wire Line
 	7900 4300 7900 3800
-Connection ~ 8300 4300
+Connection ~ 8200 4300
 Wire Wire Line
 	2400 4300 2800 4300
 Wire Wire Line
@@ -642,7 +629,7 @@ Wire Wire Line
 	4800 4600 4100 4600
 Wire Wire Line
 	4800 1900 4800 4600
-Text Label 6400 5200 0    50   ~ 0
+Text Label 6200 5200 0    50   ~ 0
 BAT+
 Wire Wire Line
 	4100 5400 5800 5400
@@ -689,7 +676,7 @@ Wire Wire Line
 	5800 5300 5800 5400
 Connection ~ 5800 5400
 Wire Wire Line
-	5800 5400 6800 5400
+	5800 5400 6500 5400
 Wire Wire Line
 	9000 4900 9000 5900
 Wire Wire Line
@@ -701,13 +688,11 @@ Wire Wire Line
 Wire Wire Line
 	8900 4700 9500 4700
 Wire Wire Line
-	9500 4600 8800 4600
+	9500 4600 9400 4600
 Wire Wire Line
 	8900 4700 8900 5700
 Wire Wire Line
-	8800 4600 8800 5600
-Wire Wire Line
-	8800 5600 9500 5600
+	8700 5600 9400 5600
 Wire Wire Line
 	4100 2000 4700 2000
 Wire Wire Line
@@ -791,8 +776,6 @@ Text Label 2500 2500 0    50   ~ 0
 BAT-
 Text Label 5000 1900 0    50   ~ 0
 EXT+
-Wire Wire Line
-	6400 5200 6800 5200
 Text Notes 1500 6200 0    50   ~ 0
 Plug: Würth WR-MPC3\nPart-no. 662014113322\nUse low force crimp contacts!
 $Comp
@@ -833,4 +816,66 @@ Wire Wire Line
 	9000 1300 9000 1400
 Text Notes 1900 1100 0    200  ~ 0
 Libre Solar BMS for 3-8 cells
+Text Label 9100 5400 0    50   ~ 0
+CAN_GND
+Wire Wire Line
+	8500 5400 9500 5400
+Wire Wire Line
+	9400 4500 9400 4600
+Wire Wire Line
+	9400 5500 9400 5600
+Wire Wire Line
+	9400 5500 9500 5500
+Connection ~ 9400 5600
+Wire Wire Line
+	9400 5600 9500 5600
+Wire Wire Line
+	9400 4600 8700 4600
+Wire Wire Line
+	8700 4600 8700 5600
+Connection ~ 9400 4600
+Text Label 7000 4600 0    50   ~ 0
+EXT+
+$Comp
+L LibreSolar:D_Schottky D11
+U 1 1 604A441C
+P 7700 4600
+F 0 "D11" H 7700 4384 50  0000 C CNN
+F 1 "NRVTS260ESFT1G" H 7700 4475 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 7600 4600 50  0001 C CNN
+F 3 "" H 7700 4700 50  0001 C CNN
+F 4 "On Semiconductor" H 7700 4600 50  0001 C CNN "Manufacturer"
+F 5 "NRVTS260ESFT1G" H 7700 4600 50  0001 C CNN "PartNumber"
+F 6 "Alternative: Nexperia PMEG6020ER,115" H 7700 4600 50  0001 C CNN "Remarks"
+	1    7700 4600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8700 4600 7800 4600
+Connection ~ 8700 4600
+Wire Wire Line
+	7600 4600 7000 4600
+$Comp
+L LibreSolar:D_Schottky D12
+U 1 1 604BC955
+P 8000 5800
+F 0 "D12" H 8000 6016 50  0000 C CNN
+F 1 "NRVTS260ESFT1G" H 8000 5925 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 7900 5800 50  0001 C CNN
+F 3 "" H 8000 5900 50  0001 C CNN
+F 4 "On Semiconductor" H 8000 5800 50  0001 C CNN "Manufacturer"
+F 5 "NRVTS260ESFT1G" H 8000 5800 50  0001 C CNN "PartNumber"
+F 6 "Alternative: Nexperia PMEG6020ER,115" H 8000 5800 50  0001 C CNN "Remarks"
+	1    8000 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 5800 7800 5900
+Wire Wire Line
+	8500 5800 8100 5800
+Connection ~ 8500 5800
+Wire Wire Line
+	7900 5800 7800 5800
+Wire Wire Line
+	6500 5200 6200 5200
 $EndSCHEMATC
